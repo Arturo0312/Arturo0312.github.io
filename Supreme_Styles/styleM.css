@@ -1,0 +1,33 @@
+.Menu{
+    
+    background-color: blue;
+}
+.banner-vin{
+    height: 40px;
+    background-color: burlywood;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.banner-vin:hover{
+    height: 40px;
+    background-color:cornsilk;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 10px 0;
+        color: black;
+        font-size: 30px;
+}
+
+a:hover{
+    background-color: black;
+        color: white;
+}

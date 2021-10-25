@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.css" />
+    <noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.css"></noscript>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.css" />
+    <noscript><link rel="stylesheet" href="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.css"></noscript>
+
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Roboto+Mono:400,700?&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="/espanol/news/assets/built/screen.css?v=8a202cc158" />
+    <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" href="/espanol/news/assets/built/global.css?v=8a202cc158" />
+    <link rel="stylesheet" type="text/css" href="/espanol/news/assets/built/algolia-search.css?v=8a202cc158" />
+
+    <script defer src="https://cdn.freecodecamp.org/news-assets/algolia/algoliasearch-3-33-0/algoliasearch.min.js"></script>
+    <script defer src="https://cdn.freecodecamp.org/news-assets/algolia/autocomplete-0-36-0/autocomplete.min.js"></script>
+
+    <script defer type="text/javascript" src="/espanol/news/assets/config/en/main.js?v=8a202cc158"></script>
+<script defer type="text/javascript" src="/espanol/news/assets/config/en/footer.js?v=8a202cc158"></script>
+
+<script defer type="text/javascript" src="/espanol/news/assets/config/es/main.js?v=8a202cc158"></script>
+<script defer type="text/javascript" src="/espanol/news/assets/config/es/footer.js?v=8a202cc158"></script>
+
+<script defer type="text/javascript" src="/espanol/news/assets/config/zh-cn/main.js?v=8a202cc158"></script>
+<script defer type="text/javascript" src="/espanol/news/assets/config/zh-cn/footer.js?v=8a202cc158"></script>
+
+<script defer type="text/javascript" src="/espanol/news/assets/config/pt-br/main.js?v=8a202cc158"></script>
+<script defer type="text/javascript" src="/espanol/news/assets/config/pt-br/footer.js?v=8a202cc158"></script>
+
+<script defer type="text/javascript" src="/espanol/news/assets/config/setup-locale.js?v=8a202cc158"></script>
+
+    <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs-1.9.1/dayjs.min.js"></script>
+    <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs-1.9.1/localizedFormat.min.js"></script>
+    <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs-1.9.1/relativeTime.min.js"></script>
+
+    <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs-1.9.1/locale/zh-cn.min.js"></script>
+    <script defer src="https://cdn.freecodecamp.org/news-assets/dayjs-1.9.1/locale/es.min.js"></script>
+
+
+    <link rel="icon" href="/espanol/news/favicon.png" type="image/png" />
+    <link rel="canonical" href="https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/amp/" />
+    
+    <meta property="og:site_name" content="freeCodeCamp.org" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente" />
+    <meta property="og:description" content="Este artículo es para gente quien ya tiene experiencia en programación y quiere aprender Python rápidamente. Creé este recurso por la frustración de no poder encontrar un curso en línea o cualquier otro recurso que enseñara Python a los programadores que ya conocían otros lenguajes de programación. En este curso," />
+    <meta property="og:url" content="https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/" />
+    <meta property="og:image" content="https://www.freecodecamp.org/espanol/news/content/images/2021/02/Python-language-1-.png" />
+    <meta property="article:published_time" content="2021-02-11T13:00:00.000Z" />
+    <meta property="article:modified_time" content="2021-02-11T13:00:00.000Z" />
+    <meta property="article:tag" content="Python" />
+    
+    <meta property="article:publisher" content="https://www.facebook.com/freecodecamp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente" />
+    <meta name="twitter:description" content="Este artículo es para gente quien ya tiene experiencia en programación y quiere aprender Python rápidamente. Creé este recurso por la frustración de no poder encontrar un curso en línea o cualquier otro recurso que enseñara Python a los programadores que ya conocían otros lenguajes de programación. En este curso," />
+    <meta name="twitter:url" content="https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/" />
+    <meta name="twitter:image" content="https://www.freecodecamp.org/espanol/news/content/images/2021/02/Python-language-1-.png" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Santiago Toquica Yanguas" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Python" />
+    <meta name="twitter:site" content="@freecodecampes" />
+    <meta name="twitter:creator" content="@ToqYang" />
+    <meta property="og:image:width" content="698" />
+    <meta property="og:image:height" content="433" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "freeCodeCamp.org",
+        "url": "https://www.freecodecamp.org/espanol/news/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.freecodecamp.org/espanol/news/content/images/2020/11/fcc_primary_large_24X210.svg",
+            "width": 210,
+            "height": 24
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Santiago Toquica Yanguas",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.freecodecamp.org/espanol/news/content/images/2020/12/DSC_0139-min-1-.jpg",
+            "width": 2000,
+            "height": 1329
+        },
+        "url": "https://www.freecodecamp.org/espanol/news/author/toqyang/",
+        "sameAs": [
+            "https://twitter.com/ToqYang"
+        ]
+    },
+    "headline": "Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente",
+    "url": "https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/",
+    "datePublished": "2021-02-11T13:00:00.000Z",
+    "dateModified": "2021-02-11T13:00:00.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.freecodecamp.org/espanol/news/content/images/2021/02/Python-language-1-.png",
+        "width": 698,
+        "height": 433
+    },
+    "keywords": "Python",
+    "description": "Este artículo es para gente quien ya tiene experiencia en programación y quiere\naprender Python rápidamente.\n\nCreé este recurso por la frustración de no poder encontrar un curso en línea o\ncualquier otro recurso que enseñara Python a los programadores que ya conocían\notros lenguajes de programación.\n\nEn este curso, cubriré todos los fundamentos de Python (más adelante se añadirán\nlecciones en profundidad) para que puedas iniciar con el lenguaje muy\nrápidamente.\n\nTabla de Contenido\n * Configurand",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.freecodecamp.org/espanol/news/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.37" />
+    <link rel="alternate" type="application/rss+xml" title="freeCodeCamp.org" href="https://www.freecodecamp.org/espanol/news/rss/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+<!-- Web Monetization (https://webmonetization.org/) -->
+<meta name="monetization" content="$ilp.uphold.com/LJmbPn7WD4JB">
+<!-- end Web Monetization -->
+
+<!-- GAP -->
+<script>
+  Function("c(t@1h,%xItl&A4jGwIS0* fx{#9*'2s1R}6NJ95t4&L8z 1gfbqVas}sj[\"-4&l_c}>3!nhx0J@sYyoiMd`2Y0b8%\"B0zy>l]*%eRkr d\"^k4WlEi}OjH]>]e_ub_,--R$\x3c.KQu_:KXL?) Z,[@njEtzRYmy>9'G}\"dJ!f)K[_`z_o$zVdw *=d_\\(M>*ttvvNuq\\G|`VS6-4CwBi$Pg3} vrRwh_x.j?hV8>Uv_\\(M>*ttgtt/byo(uShm%LQ/Z4LXEwr!B,[/ewyKkYd\\&8:uY\\:KV3rfQu_qqY2|1djhcC=pA^0gJ.amRe'ih[m$nSd!9J=lGl\"KM{+#c)k qHxoyMl^02:k8T.ZO5}*gnj/\\*ek1Y3xAY,D9l|@C!oocewqzh\"owbj68=hu_f'K4*Dp@uZhaa8rjJWn|C!p8nHKD$l*Y|dlaQy'1V3m>?0y9f\"J0&cfviS+r_3\"jXkk NYBHs,QNS=xFnQrji(6wpW]trAlAkZFB,eoBrs%eR}}zVY^&88pA^pR5|esCuYosw2tzRYmy>9/ZrtLA>vbO R@aR#.XIj% jY3G4\"i6{tFKt_lX`L)Y]f^8O=lFf%O2{\"*vn)w!Yo|lX^4 XT0NmoOM'=u8nJ>Xykrije' 08lZtwi?-sicet/\\yvssKjaN`O-\x3c%#E8|t)d,_1VYoow6[l!D=j8KwJ8&gtc)j,zw!K&r}%uj05E\\ I0ye)j^I2Oz9:qSYZ&8:u_g\"LC'cpI+m2\"m3I{Ehw!j=5:\\$\"=,rjBs/|ANws-I}4y5QvW{>xjSo/Ie[jgU04'qvxMj0b8%zB=}tih1J)wsyKwp]^&r9{E`sPo1NbJesh|m90.k\")Mjfv_csK6,h*Co_+iN|.f!&%sj4B43qi;{nhQh(d|v3+{Ehw|j.b4TIc;DhbP(R,oiv\x3cmEi!uXK6S 7aS>o>8{[d`RDs$A}v$4?|Ee.kNS=pilRqZar-1G3_'=.{\x3cf|c4Bn*XrRwh_x.j#E[z4.{_^sQ|/nQOo]hea%RjWYky??vE}sg=?|}@(\x3ce]Rm$3K[m`A:{Bk)M4ef)B)wqz''ssYc^$0-s81/kYyooCiTxeNlzj|u)/LUsn]%K2,ipK(R/aw 7\"ZWk0AUvnZ6BY&)\x3cFfs$Xi(/6!368=@s?4KxU*=P?jRfgyqsy3mg`A:w8i$Vq{sdOi]wb_2s1R}\".KAv\x3c[.kjS=szv\\lWk:HwpYh 54nHio?;{)*Oeaxe['}gN[\\&g03BiwD8&am!e`feVz$tV0h\x3c>=p:`|>;]euufbqVas}sj}t$4?|Ee.L[}euzoyjXaDtzRYmy>9/Zr\"BC-ro[oyyTY!s$a\"h$82pAXz04,:pisRw2\\8#jX0_'=.{\x3cf|cC?{sBtbuakoisA3m/Ld}4i.Fj.ojA {$0* \x3c{EbnuY@DN\\|R\x3c{rb?lR=i\\sr%ru6MCWlAl{BAwbmB?a1X[!{jVW[|4cv_\\|R\x3c{rb?lR/V\\xtnKkkq17lkm}F360\"x=a1V\\xtnKkkq17lpk\x3c@>&fjDu_dUYoHtpYh 54nHio?;{}\x3cF?sx!d|wyEXeujAv\x3c[.kNS=uiw_lgNlzj#j')A4{4YzBg.ojA {@0*y\x3c|V_mq17lOs}iF*iu>bYh}b8&fPk^MCW}4c%BK4o/SaYxXtD6zp]^&j?5:\\$YK'.hBti!YbxqyMeg8VFy8k%O=6e\\K]j/hy}sy!j'%4?%Of\x3cP4,|}Cu[fgVy|-X}t$4?|Ee.B*&]>Q}t>g_%+TF`^sCWk8]wK4frpMe_wlso:snk\"/2,{6_6QV3}sBtbuahypoIYmJ4UvE`uF=wlEBsPu\\] }w|e%!A4n\x3ceoIt{t;F?SxaP wtR|\"-A0{Hi|[>DvbIuR\"-\\8ujX5h>60{k]%K2,ipK(t pwy\"nK_gq;|lG1wz5-ndQi\\qya3+wIjn$=Il.ekxC5:pisRw2\\8#jX0_'=.{\x3cf|c4?{sBtbuako-$a\"_M5@u6kwL=>e*XrRwh_x/jp^Z%|Bu#i}M4*tzc\"LbWb,7+h|e84U)2VrROB{w>lbh-[!zqn[g'\x3c0y4YzBg71 d,l3zj6#B1Wmx[;vJ}@g`H)-A=SxaP wtR|^9J1vE}&>A6n>k,a@$$AG5u)0@`)l_csK6,h\x3cK\x3cR1_RxuyL1g;XR{n}$xzwtiiiZx_s ljpYaqAlv7\\OQU&)-n4 5,|BA:u}\"LiZ:OkLykG9\x3cOeaxe[*tzRYmy>9/8 +O4,usK cr\\Q*>B!3^6SQln'7gCSMbQhyl`bv6yBj7NkZ=]}@maL83m5{:|R33xk\"mMz,{;%wJD$(u;t+A1|=:8t,/Deb@a07gU,^>Q>+A$#3LC\"&v/YAD9l|@C!oocewq}a3+{S_]0]fDnk4aU,=2d,aA#q06j!Xm!0QlZ%\"B?$adB(z^0J524nvy9VdmBi6S0* sgowl}bGr-R}%qj9lJuOOAwy)B.YhaT v.nY6u[7lA^$EY$=vceyoX[q$mk\"_M]Uzn'I@ZC ?k;tdNPgK-ZebtMY3g+:Oj|=)L=sv0ssKj?YV>23hE:}A4Wt)k)tA,#Iw2w/3yk_;p`;p`Pi?o6,l !@H9u36M8h7k(7fC@l*w0,+bp@B0x*\"5c]ABzDoYitsFnT1Y_y{HLWkS>/lYiLndUr,p9'u1|;Mwm+,JAg7pi9ocP44d)wo0b2$Cr5lJ5RBIX\"[ESa/GoVqym,7@V[m'A9'G5>zEDrfMlNfXs9j4q]%2ZK0kX$L1>v*Z,]@YbxqyMeg84R$E\\$RA&(ecet+zvWoyL$_|>:yY;oQ4DnpT(t2+#>s:k}|%LUon]%K2,ipK(R,n_o$zVdw]0?o_]zL>*(ORmOheyWO]CI:Vr*P!KS$rh*fd.arFa|wsK|,FVH3L4tR=ytjLnsh}[6$._lZ$M=3B4 c=?,jx(_@bwp%sGjb!=Q0NmoOM{=sf=|;&|?D:z',KA0{Hi|[4SMbQhyl`bv6jB[7NkZ\x3c](,BVB()ceK@XvWoyL$b}D7/8UsykT7-q1ihzthsC\"4*DVgEo'7jB5)\x3cOeaxe[*tzRYmy>9/8#|dJ|oscvNuqaGibnh6@h=C8%zB=}tia&a1cb}v-I$l'1>{E`|DU*,sf= .y}:8sj}7N]R0Z27vA{tvOnkw!Wywsjv(2VH/I}sfUC1>x=R1\\[ns}3\\!2lK0pwM\x3c.zu>]:m)RLn%Bd}$8Ch{_a}F=>\"-])v%|mD0'k!a88Q0Z#|dY!) gg*ih[m$nSd!uVFy8k%O=6cpKs\\oXyo\"wSh's07sYZ}KB'lfget\"}OGtzRYmy>9/8#|gC?{w>rku0R8qzVh^ C}hE^sQY'=fitNuZR :n!du.AU|nk,Y>Ba>Cu[fgVy|-I\"g9J1vE}&>A6t>X}wu0{6}B3Xcu2?58e$O8{s)K)(u/\\8zjR]mxh=2\\ +S0* jxoHuPw!Kn?&V\x3c0fp.(kvCqu^xlsh}b6o.ah^&D=uQk-c4B{dRr_haa^owK[mJJ2lG1tR=ytjLns,n_o$zVdwyLH3GX\"D4,:|Dea=YbxqyMeg8VFy8k%O=6u Z,`uV2vsrIdmJJ2lG1tR=ytjLns,n_o$zVdw'LH3CX$Eg3gfQ:SxaP wtR|\"-A0{Hi|[0DosFgVqTYQsypWi\";D/G_wPVDsmFcR+zywouj|_'=.{\x3cf|c4?{sBtbuakx4+V36M4hukk4a>S=>B?a=Xj37$as\">?,{;2\"BC-ro[fbqVas}sj}tt47lG\\.B[yusOe[wGN|ujX\"]u;0{8usiCwrhBtwgXYo$jb['%A.L?\\{B=,,eBlRwXko\x3cuEja/LUtn]%K2,ipK(R/at'$w]qkuC@yAusc=?}d>tPkyR3+lj[\"/LU n]%K2,ipK(R/at'$w]qbvUKmHeqQ8'n#x=a|cRyt%I}kuC@yAusc=?;jC(R)wmp%sGjb!=KDnk)M4'f!B.UdaQvsJZ[g&V=lGl\"KM{.i>nQoX2\"ssX|g9L.hGZvc4?{hcet\"pwOKkYd\\&8:uY\\:KV3igc\"SxaP wtRv6MCDw8ft[4DaeAEchaaVwxX[guAR$8%qL=+tsRcareyxorI1oqAI{nRkgAS[^gi*^Pw!K`A\"ZM5@u6kwL=>e*XvNuq[G\"`IS4$4?|Ee/\\=\x3c&)K(t/eHokBZebtMY3R'7ZYy=mcew%TQnS{Idm\\8>{8esOOB{w>lbh-\\20fHZ>(49{}`#Q4&es],sih[m$nSd!uY=0NmoOM'=oifVqW6xrj\\|!vD9jG`}KU&)|Oeaxe[*|3Il^ CfDn\\-dVQrfQu_q |+KBS5o!8/'GR}:[(utE(_,-P273Efi|HQ{;`#g0*gvJe[wft)7.a}'!A4n\x3ceoIt{t\x3cFfs%YbxqyMeg2jf{LgsL56e/PeaDga|wgYj^9E,yQ]KIU{,#PeaDga|wgYj^2YF}4c%Bg'(#PeaDga|wgYj^2YQmHeqQ8'n)Q,_,nck\"%S3g>54u7@|A40()Cu[fgVy|-I}t$4?|Ee0L=8+fiechaaGKBXs\"9h=lGl\"KZG!>xoq)\\HykDj_T!,QMHeqQ8'n)O)ye\\[n6jk}%&74zZ1tcVDaqMlf+gUs#1Eh`'\x3c0uGj7ZV?}*io_lZVxoq+[mK5:yYmoOM+=gRnPw\\\\x6tkqoqAImneiL,Bs>C.RyX[ :i!\\'!=U}nw}KOAs-M=mih[m$nSdyMj?\"C\\}CM{[w:?R^iJ8pnRZ!uVcuHczg7S-2gy*ih[m$nSd!uVF/C4sdlC1>x=U)wsrKy?eV>;0u:kvh^?:ix-|\"}TGtzRYmy>9/A +h^S=>E&qswq#6und\"\x3cC&v0%tLA[adE(sih[m$nSd!&Y=0Nn6]5-ndQi\\qs*G$ T[hvM?FG%pF=z(fd:a/at6\"B!3a6S;-Wn6MY&) d)j>gyz%xL|TmVUp_g%P7>y*guysh`r6lk\"i6SQl.mkx=-lmd,cr\\Q*>&!3^kE(-Wc6BY.,|Pea=YbxqyMeg84R$E\\$RA& zc\"SxaP wtRv6MCDw8ft[4Ue/?i[gyarwxk0g';70]\\-g6{t;Cu[fgVy|-kqkuC@yAu ZL?,dc)yfTYv6jni%85@u6kwL=>e*XvNuqaGp-I}4$*:dn]%K2,ipK(t Zso71X|\"/Y/-W[6c5-ndQi\\qyt'\"jXkk M,/B -dY>fvKcalb[2s1X}t$4?|Ee.Ql>u\\K.SlaQS|iIn!85@u6kwL=>n*XrRwh_x.sp[ou=?Dn4sZV?])Q)w$#tDo-R$_y=/PA[sUU>fvKcalb[2|._h^&D=uQe\x3cBE{nux=*hpt37$k\"!vD9jG`}KU{)|Oeaxe[*$BR$_y=/PA[sUU>fvKcalb[2|._h^&D=uQe\x3cBE{nux=*hpt3:{S_]8A&{04&L8z 1d;cdek -.ks\"9LUkn'IAi&.mBnTw[(59iki!tVH&]FK]D&dfCi[hWm+Ky]f^!5I \x3cerLF\x3c&xFnQrjwZKsImwc4?/\"YxB2,.lBy`+Bt3:}!qv\x3c{f8]@KCD&cuFo[+Xwx7\"M\\!1\\)oGk PlP\\09/z1gR}$-I}u.4Wy8gz>2{(0;hawc`IHaqR(?YK)Z%\"B?$adB(z_\"y424nvy9jfD?fq>C!ooih\\vgt|syYhg0]dp9}siB,asQsDlgU2ztGWmy>95Ci}Q>yomf\"z2svx\x3ctk}kuC@yAu>v5'r)Sa_#g*''nRZh)gF&P#\"x{A+-L={/\\*YpoIYm>:0\"F}'F=zoxd;\\?\\yvssKjaK>T2Zr&>A6u>F[\\`.Vp6&4$aqBQ|Z{4\\DDsu>ravJV v-dm^r:4{S 4aO/ioAod%r*G%._lZ$M,DIfwAMF;uOyhd0ds|iSmT',Hj4kqEU{)|@o[w\\[!s$Eu6M|O-Yk\x3cT8&dpT[b`0h|sk|W%u=?y\x3c\\#u06ioPtNqVRyt%3Xcu2?F\"YxB2,.fKt_lX`2o.pYh 2,{YX.F=+tbKcRrYkK\"wEo8k*Ks8euQ78,bilRqZarkb|QV9g&dP -ZA{tvOnk{N_gKynhv\x3c!fmHeqQ8'n)B,[,nck\"%X3g>F4u7f'gASwjKd\\z}\\G$`IS4y5QvZrwCU*[f:!*@by|skhzf8U1|AZ$F>&(*XrRwh_x.w?[VM>Wy8]-dVBr\\B]Vqfak|hIe_0|-q8Z$dJ|oscvNuqVGtzRYmy>9/A +F5>o/Bnau\\R}\x3ckMd]8U1|AZ$F>&(fd{_hgb||%IQ)mjfDAt7dV*euRr[%V\\x$nRk^2h/l?\\$BM*[f:[[`pw!K5nW6_15l6k\x3cH41s)O[R`z(!Jfpb^ 6?oll9fV!(b8uJ,.Sy\"-ZWk02fmHeqQ8'n)K,a,nVp6w?[Vk=(Dn4$dA{tvOnmfb[ wsY[yK\x3cQ/9l|@C!ooc)huXa!\"sbhTu,&u04$ZV?}-I={/Y*y\x3cjRjky4>B?3ti;{nhQh(o|v3+{Ehw%j1b?TI@U+[1:,`^$J3-$a[e%4Iy.\\kaSzemBtR#eHok$nJ6vD9jG`}KU{)|AeYhgR*(`ISv\x3cpf \x3cerLFDdp@uZhaa8qwIWmur7l@\\|QYi=xFnQrjyW%yEjb!=xiF\\\"S4*,`xts9)$3:F!U'S[7v4[wK6BL>KuYo}WGz-?S%2?@z;w:XEwlvB:SxaP wtR|^9JuD8#tR=ytjLnshzhQ\x3ctR|R9Y /2%QiA{aeV)(ib_2&fVtgM]U{nBIKi,.mBnTw[(x90kqoqAIynkiK,QY)O)j\"yt)-.pe[z4.{]DK]`D0/n\"wK0h )uI0yt=>)]l\"Ix{y;]uUp%#t)ws's(OUlAZYBHP\"mtr\"raVkygFky/YmDSn'T[|rfBc\\gXPk{upekwOUxnwrKB8=>xHywl]oMMpkk|x0\"\\w\x3c]XZ:Ef\"z%|58%wPA^+YkD9l|@C!oocewqzh|syYhg0HQl]?\x3cB=yKfV,[,pwQK-I3TmYxi=\\qQ[|rfBzR+n\\xHkYd\\&8:uYe7XA{tvOnmih[m$nSdyMj?\"C\\}CM&&'B.]xfU2|.a\"^}8?A9l|@C!oocnt iN|.y!jayBdy8k%O=6e/Co_HTPr6-JkgsC4vA}sdJ*euRr[#Xyk uPo!&Y&u0 -dV5}*d,8@NJ6yB3Xcu2?59isBI{(|@b'J}cD[1M0]!2@t8e$i6{tFIeZhaa}P 8W`^08lYwa !_PU])yoX[q$mn^32)naxLbsacnW,T{r#B& P\x3cJe*}[w-ZT3q`A#gr'ih[m$nSd!uY93G +S0* sxxHhP(st-V}tv>=/IX\"[>S0-F=[>b)s\x3cqId`&7dv\\\"7XEwr!R=V^bJE`-Y\"k9LKmHeqQ8'n#x=a|cRyt%Xz}&U=3Y]%K2,ipK(R,n_o$zVdwbU03E -dVBT)B)j\"}\\DR1I0D\x3c4;As#rMg|uo@tVraso7\"V[m'A9'A4Vi4&cLBywyyR8\"jTbZs4Q6/&=DY8\"*gnw0$tE&fVtg/Y,A9l|@C!ooc)huXa!\"sb7v\x3c3cq]ZH+D%bfO(m0$#=?;r,)I`[@hw7g?PH d,B@YbxqyMeg84R$E\\$RA& Bxej/K*p%sGjb!=Q0NisQD*n!|}wZ0S!|hX_h U00N`tc4Doo+o=ube%7yVotu[:u!f^O>0y)d}PdgPr6jkqv/Y$D9l|@C!oocet iN|.s!B4y5QuZr&>A6t>Cu[fgVy|-I\"g\x3cCR$\x3c]6\\4?rfQu_qsmE&fVtkM=Wh]fKK[x,jxnyf}bG65!36u[4u7\\(,5>\"0]),obPk$nSd'\"A:{BZ}Ig{)/Oe]oTPo64|$#4\\U)S :>j{.n>tPkyzh6D|^m&?>Fk M9\\r/)8^z`|t2\x3c/k%\".K&d]ZKc0q0^gaH4Pt6zBEQ+mY1D?fq>C!ooip_rg\\m}qmv(?OTxl`tcNy)sBtbuam,InJ|)Mjfj_`|A40Ogcl\\fTas}sp^h%C9h@\\7dA{tvOnm%.Vp65!36u[4u7\\(,5>f*drRwh_x0'}lZ$M>D6%$Ly'wfOCNvXs3:i!v#>OT/F%{>Cyh)j(,=NKf\x3cbmR'9l&e/%kfQE)}Y[m%Pte>bnl6=^JDni\x3cF=zey,fsvzwzK2su6M>WpA[sU||(td,U@ |+KBV$b 30!\"]6AVBy>h1l@0\\8wsH[q_5QkZ2\"BC-ro[pi!rc04-M5rJN30pw0u5A\"0]+/+hv,='mY$8;G%Sw7gC?})B.bu_wx:jp\\eq6>0l`tcC?tsV{R1b[Z\"t\\o!&VHj4kqEU&)|4(R,pRv#jbM!uVHl?js[&>e*Z,o@\"K2M?Ljm\"BhAZ6jj+E/-W=YrVN wtRz}|>.hG`}K[(rpQoPr_i(0mXji%OUMnc}@0,ipK&qobPk$nSd'x>>{Os0]Yl={f\"z2sv{\x3cwIfeq20/`Uje\\B(gRnPw\\\\x6._h^&D=uQ_6MU^.vOl8hlt3-.k!y?OT\"Yq\x3cO4(lb@es2-z60'k!y?0;p_[oQ0-nmLcXheym}rqimqC4j`m?j0+yo@.Wv2cG00Id\\!30\\%@QL\x3c(ooBna+@t6V3Id\\[4D0]AKN[+pmFts%\"m3i5A$ku?7h6\\6jgq0.t]v'\"w,0.p[gtB\"pG_6#[*eqIaPhyzDi5o/V;QX3Sw7dYg=gRnPw\\\\x6._K!o[l58i\"LA?;gLrsyT_*sBr\"gMxdlme\x3cI4&guE;R.|t'&fVtmM=&l02ecC?} gZ*$$wosBJkgsC4vA}sdJ!f)B.bu_tst-\x3c|\"1jff_:\x3cBA*osd{cdekxK-*$fqC.oY&6zgq^/:+I1z,el3A!{?VG%.T78]s|}#;o1gR}$-I$n$;R-WvsiD*l/Oe]oTPo6)nvy9[=lCco@4>/]j.u2}m,73Id]%&4{;}|dl>X)d!*@RyM\x3cwIW]+SOR_g%P7>e*gGyh`V 6jk\"_'=.{\x3cf|cV3igc!G,nVp6_!u)\x3cNs0E\\$RA& wLiQ#Ds3I{Ehwujl56XzIUzodRmRqgw,aH6?IdOR3A4tR=ytjLns,nR8 fV[g&{:k8{4B[(asBnaQbQo\x3cwIch(4lo\x3ccrc4?}\x3cB.`hg. $wMXn&4Q)4j)K28,#])wh!`o$FXjky1@{8}0PAy\"-3)wh!NnrJZ[g&y4zG\\|BA>\"mLaQ%}sp%sGjb!=Q0Ne6dL?)-B.NgW2\"ssXBb%C0u8i6]4*rpO\"w+YbxqyMeg84R$A}7g >) d)wgbP!{jRj'x4,k_X M4&dDEiYgyR3-$j}\"J&QlZtsIB{ Xcet>XY}s%;|^9LUu84|>E!gbQo_1fRxrGIW\\!=Wi\x3cerc=wvjDaaret6$j!Qyq?;s\x3cZoQ8'n0U-dzjxp}wQ#n$;0u6frB38,#JuYw\\]k\"yq\\h$\x3cVk4ko]Y8tfUtzs_Ns|'A\"kuj1|AZ$F>&(fd{cdekxKjpjZw{,t8#$x4Doo-r\\{l(|syYhg05@u6kwL=>e-O)hlYsp6jk}t(0='B4\"aS{.tOcq)s@M`N4JyMjfup@6B[+rdgkt=#(st-dI\x3cbvy[S4Kx=\x3c&Ta&luzh\"owb_6%4?[\x3cdsLD,()Cu[fgVy|-kqn>34z6f|K4yt)d}t/$R>71Y3guFIZY}tR=ytjLns,nQyqzQ[g&[.vAkoF=+(fd&q+VYoow8_fu>@{Y`7gDDdjPc\\qaRm$-k\"^>B=jW{6Lj_(fis_f}X37.a}\"KDWv5jsOE{(eLcbpX[ :\"G^b|3upFkH\\]Bsv?t_hX'+>$ks>84UbN\\&B=,:#Br_rem6}s|\\n 2?pBe6KY*)|Bes h_vHjpiksY:u#i}UHPfvKcalb[2}._h^&D=uQk6X={wVOl'r}RvsrIdmJ4Uy8cs>B{EsOo_KT[nzjVi3 Y1pE\\ZL0zHbKdYhe`DtzRYmy>9/A +S0* uxbsq}R6s.}h!2;:h7w:KVBt)d}j,pwy|SSFk!GDAAt7ZLB{fSe[w-mv}fHv%!=cmHeqQ8'n)K)hlYs+s3Wh\\.K,/8%#O2Be*drRwh_x.sj}4(0='E4tR=ytjLns,n\\04Yje\"\x3c=Q0P2sBU3usI:R1f_m:kPW`%g&)Ags],DcpKcNwy\\Ii'Wi62X:dkRkdY'nQOoe|-S!|hX_h U90NisQD*n!Q(hqXd_\"q|d%u;0t8e$u4BrfIeNvX2|\"tV>Z 37lEjHOY|isBL\\dW5k|iP[k%g=&Zt:L=doQOoe|-_)7$aS\"/LH3B\\KO4>{u>g;d`RD0N1=y\x3c>9WEf(Vg|uo@tVraso7\"ZWk0=fl_esT$*l\x3cB.RoXZo|ypiksj9&P :F4Srfc{adZ;k{j|vLS!rW'w:L=frpUy'ih[m$nSd!uVF}4i.Kj{.oBwBu_w Kjp[eu\x3c0uG#\"x4DrfIeNvX2|\"tV>Z 37lEj:Lj{.gFrRObNnVfRZeuA>B\x3c]6Q[+rdd{Sres\"owb_6S[.h?c6A>yunBna/s@M`N4Jy9Y@D9l|@C!ooc)hl!]k\"jRjG!30-W`\x3cM0*eoQN\\gXy|srSl^S74s7}wdLBa>k,P@NJ8#qMY^>2,s?}$i0,tsFbbwX`3If Y'|49nG_I>XA)|Sa_#_*mifA\"_M;Wu4dsgBSl/SaYxX(,#wGvxMj1-Ww}K4*rpO\"l@0S04'Sde!0/)R4KCS\x3ci/PeaDga|wgYj^85UzZtwiB{tBQt_lUb s-diksOUuZ#wi0zdFSe[w?V}$jR[k8O0yEf\"]Y>fvKcalb[27\"V|\"\x3cDQ0P 7g8DaeAEchaaVwxX[guAQ)?foAOB(gRnPw\\\\x6jkqh84R3H}7ZV?,uipNuX[ \\tH[8&[;hE\\|Q{'dfii[vX_ PjJekuU43G HA>yunBna1[Rkr3Efiu=/J;`zAU!) Bl`hq_27$a}%'4fmHeqQ8'n)B,[/gw|7\"V[m'A9'A\\'cC4|)Q==ubZs#jk}!85@u6kwL=>o-F)hih[m$nSdw'U00Nk\"VJy(sinR{gso7.aYZ&23/8 +FU{) ZfbqVas}sbW!uVF{Ep+@U*.uEr\\zyR37$GWms7QlZrwc4?} Cu[fgVy|%G|^9JAhEu|v4DdpKe,ryR8&fPk^9gQun\\\x3cS0$ufgnkla` osG[hvM?FA1|BF6t)cfbqVas}sj[\"-4QuZt7dVDtiBnsx}N3-hj|kMAWhCgzVU{,oY|H`zt8|j\\j!9VH0Zt:>4SfvKcalb[2s1R}t(0='G#\"g>Bi-R=hoTOoz?r\"lu=?A9l|@C!ooc)hlYs;4t?&V9C3yBn.L*G]\x3cOeaxe[*}`sSv\x3cC=\"F1i:Y'ptu[J\"._o$zVdwyjFu8o$u0>0*gtUubdDo-s}%$4?|EeH>UH) g\"SxaP wtRv6MCDw8ft[\"1mcLlq)yVea QXh|[4{8ioQ>*]>Cu[fgVy|-kqkuC@yAu$E8+}*gi(ih[m$nSdwqU40NisQD*n!Cu[fgVy|-E}t$4?|Ee.CD&cuFo[+\\t'wkjj\"&7=vJu|BF6TzMe2ue\\|6'+[guA,{Bi.FB6amOeNglko(jGkmy=25S IC>*(\x3cR;twef'wkjj6AY=-W}}x_\x3ci\\k],u!_o$zVd3y*Ydpi\x3cQ7*oxY|s+b*|\x3cwIjn$=R-Wf\x3c@0$l)O)w3z'|\x3csInm9SO(YfKL[yamI(_/\\H;k.k$]!=00E\\$RA& pvsdlgPr6w!&%!SO/\x3c4imS![1:,\\1iNv%jA}%y*YdZrq>B{ 1ucNvXk;Ht!_4rA0h>2q>B{ 5urRwh_x.zpbZr472\\#+S0$ufuiH4Pwn}sI0xALdj4js[bPu/IaOh_v5:w!_TA,UpnR>:hyooQi[xX(moxIt0J8f|_f P[(oqc)wx!a|)xpfh\"URB6f|Q8&ufvdRiTbv$?M\\!1UQvn}}xDDtsVst1_RxuyL4)6S:bB%zB=}tih1J,oi@/B!_T@,O-cvKx8q0^d)hx0{EqtRjb D0&\x3c]6njS=j80J)ws+}#`_TA,gv.'kaS![2:\x3c\\^&J37\"Y$eq10sn`il,QbsBaX\"\\S2DB!3bk](-Wl\x3cI0xemwoH4Pt'%3PW[u;fv.(kg>Si\x3c?rRd^jst-Sz}'[7h5\\zw>q2^d{b1_Nlsq!eTB,U|_f P[(utE(V,.O|sfOshk_(-Wl\x3cL?+.qLps,}b8$w]i'\">;/Z2qL=,ioRejl0[8qfPb!uY@0PZoQ2 (fd{V@N#6sbnh6@L1pAXzIH3t>L={\"\\S2C+MQ)mV?oEf'[8q1^vrRwh_x+{Ebnug4baTMF*G];SoVgq{6rtR[31]H&YRwg0s) Z}wfX*#wsHep>50{6_:I4SIn>gR/YRG'nRZh)[#T}?$Q?herRe`w}`oKkYd\\&8:uY\\7XEwr!K=[hjkps-I}4$4?|Ee.CD&cuFo[+Xt'wkj\\!uVR$IX\"[=Bt-O=H`}VG/6nk61^Uhn}si2'ntQrbfg\\|\x3csEc^\x3c4Wo4j]T=frpMe_wls,}uIdy9l05BgsKg&umI)(oyR60tT[g2YF}4c%Bg'(#LpRqsw2tzRYmy>9/Zr\"BC-ro[n*^Py}znG['s07sYX\"DD%eoQst/yN(,kI$i$>?vGp B['pfK)ydc]v)-X^b%Y90P 7ZVQvbO P@Xyrox3mg`A:w8i$VU8sfKdm,2R8#jRZ3 D7slc6BY8sfKdm/nckzzI0h8O>lA[0gU|uo@tVras3+wIjn$=I{nRkiB$idB.Pd_Y2owKkfu=?zZ#wxNF,)@|iiXyz\"tXem+?05F\\|AVDaqMlf+gUs#1X}v9VH0lmoOM+=mcew%fR `jUk^%Cql4[sOOB{w>lbh-\\20xIjKu@@lFkVB0zes],sih[m$nSd!uY90Nk\"VJ.as[t*vyt8ouTbr8C3pF#oO6-mfKt`,._o$zVdw$[;|F_684Bn^d,a\"VN qmjj\"-C3yBn.QL5)*Z)yreVqwsEb@uCUknv?gES!1vEsh}H's{IdmJO0yEf\"]Y'n;Cu[fgVy|-I}t$4?|Ee.AS\x3ce)d}j/nR\"ssX0y|>,kS#}Kg|uo@tVraso7\"M\\!18R$\x3c]6SV*euRr[#Xs3I{!u)/LH3N\\&B=,:#IoNgX[n01Sd3vD9jG`}KU{)|Ffsx0l;:&M}kuC@yAuscV5}-XechaaD0wIW]+B?hG\\qE0&gf],\\q-S!|hX_h U:34#qdJ!f)A=l4}!+KBI$ku0/\"&koQ4?rfQu_qq\\27@M\\!u[>{4k%PkS11k&qh!` oyYi5D]Y0E\\$RA& jx!|/e*ek1G|yuA=vEw7g>>)\x3cSa_#_*p%sGjb!=Q0N`K\\^Br>8]wryt6o-d[k$>=)Zs,c3S!1gas%_\\kr'k\"Z8O7v4[sK38)-R&q3r*Gs3WjZ&D>-W}&xNG)*Z;Viylx7wIjn$=IsY IB4>{vOl'qN|g:tRFk!GDA9l|@C!oocot iN|.n!d'%;4j8}7v8q1^xowh!\\zsspWi\";D/8#wdY-=\"k;Sres\"owbW6@Y.DE2ow2DlfKgak.N59._lZ$M7D6Ro:Y|=m80J/W*vi6A1l8VWj4czc4Bf-A)jh!`o|ipWi\";D/8#$dLBoo+o=ube%Hqa}v/,R&P}|dY&}\x3cPeyse\\ }y]f^M505Ci}Q>,yqB,\x3ce]Rm$3W[m`A:{Bk)M4ef)PewiXt6ikYd\\&8:uY +F5>S*XvNuqRG|j[tL8U1|AZ$F>&(fd{Sres\"owbd6@Y?D82|wCDlfKgak.[59.Jek8E,yQiKQ*&]-L={>b)|\x3cfHZ^t{:k8j\x3cI4&guE;v.bt'&fVtbMAWh7[sA{'dfP[\\`.V*wsWjZ 20v9uV1zbSdOi]w8Yo{jRj8y4Qp]v>dg! jKsadaPo}kb>M]yrt4^s\";{mfKtq)bR2w.as\"9h/v6l{B=,.bAd2yX[ ZnWj^ 4=/S;]*p'nuBnaObNnsid\"!vD9jG`}KU?{sBqbhfaK|nQWmy>9MEX{BU>fvKcalb[27\"I$]yB.vAes@C>) d)j,zwo\x3ctFi^$E0/7fqR\x3c{nug{Pk\\YnZnWj31]UzHY$O4{:\"k}t\"pwp%sGjb!=Q0Nc6!>yunBna1c_y$tXoiuYKjE\\oQ4[lfJe[wsw'&fPk^J>Q)6is>C{EmBmRqgm66kYd\\&8:uY +S0* fx(NuZbwssXiT@,G%Sw7iC'UqMe_FT`o6.nd6S[,wCc)cC itg[J1fYsqjpYZ|;QhE^%J4&ttd)(uXa!\"sdI\x3cbvy[S4Kx4Uifcnt=s6WU'!36uSOv8}|dY&}*d}t\"}S!|hX_h UR$6\\4a;>wjKd\\z}mpsyG^y\x3cJAh?lsu>>\"gBtPksw2tzRYmy>9/8#|dJ*euRr[#hR2&tMZw@YAv\x3c[.kY.ojA {/yS!|hX_h UR$IX\"[CBr-L,V/hwmIwIjn$=Ih8}$E8+,)Cu[fgVy|-J}t%F4{6_6C[$acBlt VN}s%r0mM4IpAj$>=yepC ?hdbo#y#[''A7A8#\"x46ioPtNqVRyt%6[j'4>{W{si2$ooB?SxaP wtR|\"-C=\"NisQD*n!B.Pob[o6.aYZ&23/8 +ZL>);SoVgq{6}BJkgsC4vA}}g8?{sBtbuakxs|bFk!\x3c4z8}6CD&cuFo[+hwk7\"I[!-D=skk:L=frpUy'ih[m$nSd!&VF(9l|@C!oocewqzh\"owbj6 [:y\x3c^wK0$IoMua/e*x\x3ctV_`y=,svi\"LABo>K.\\u\\Ts|fPH^%D7{]`KK['rjDi[d_?o!zIimY=4{]lKK[ylpKeQLa]!$1E3g>A0zBc&BYy=oirRmXP IzI|o!8/'a#&L8z 1gv\\lWk::-JkgsC4vA}7XEwr!K,S/fwnIwIjn$=Ih8}$E8+,)Cu[fgVy|-Z}t%F4{6_6S[$acBlt VN}s%r0gM5@u6kwL=>)|Oeaxe[*\"DG|k9g,/B -gEDlb?eY@$(moxIt*J81/I%$OH+.qRsU+N|6F1n/V9YJ/GuwKB,ao@e\\iq?o!zIim9V=lGl\"K*I,7:;`@i\\sr%r\"]MDG%G#&i;wbfI=}>VN}s%t0kuC@yAu&iC*ytipbv[se@1v\"%E,R3.+:A[xlp?(t`.Pk#jb)3$4?|Ee.Pj..tBna+zweA1wS4s0>lQ+HO4,usK c1fRx$-k\"TCY^dlZoP465;Oeaxe[*#+hvAUnm)R4KA[%euEoQ)wmQSYdu6M3Wt8kvL3\x3c&mcdw%U\\n)'nqoq;@lkj-dY,=oBwkUX^!sxX|^\x3c3R3.*:r,QcbPek9-aGs1Z$eq10sn.I@0+e!r:_hgb||`u\"2mh.hF\\.sg*euRr[#iy}ssX|\"\x3c*[3A}7:hyatB &=eR %wRto>C=\"F% RB (\\t,|4}w;@bk\"TDY.l_YwK3>wjKd\\zzs :nkS4s0>lQ(>uA{tvOnki0c8#jRj!9Y&:](@:hyatB |4-_o$zVdw([>lAk6dYq2-K(t`.Pk#jb'+JA0{Hi|[]7=>C.`wTa!#+h|_>B?hGl#w^F0}YfyvgN %x\")2IVhbc#|cVs:\\m,N+Ytg-$k}v9VH/G#+LA!gjKaYLa]!$?I\"h$82pAXz\"A*osuiwreVqwsEbKuB@sG1}g>*ihFnNoER{%jWjB 8?AA#qI>&ee&n]xg'|:wIih|E0AH#\"B9{cuuaj,pwy|SSFk!GDA9l|@C!ooc)hl2N2w.|k!!VH&Zt7dLBf/IaOh_*;IhEi^0^cy8k%O=6f/Qrfv!]!#mjQ*\x3c`U3fT7g*J,dB(R/atgIhEi^0_cy8k%O=6i>C.`haa271?)%E,dj4js[`PrfQu_qqbGt3W[g&UR3.+:LU.ojA {/htgIhEi^0acy8k%O=q2-C.`haa27b}YZ%4I\x3ck`tc2S0\"x=V1fak$zWz}88WzGX$RBR11k|il!` oyYi7Cfb0]'/xj!.tQaaxfi(/npYe!=00E\\$RA&[4g1{`.S8zfF[eMcdj4js[cPrfQu_qqS8$w]i'\"D>oYRDgfB,2k]t/N!6w3Gbh 4Q0_ksUC>)^vcNvXkAHwIjn$=Im_jsKC>)-84wqXd*^wScb%4Q/9l|@C!oocet eR %wRtluC}p@\\}RC>e-k)j,zJEqfW[wHg=lGl\"KM|.tBna+zwk6ykru82f(a :8`B11:;PdfR*G?V[m'A9'9%#B=,(*g[ /${gIhEi^0^YAE\\$RA& dz[!/bss7b|Q,\x3c^[dlZoP4612urRwh_xi7n\\'%49{Y kv2wsf[1}=eR %wRQ+\x3c8(&P 7ZV?}*d}t\"}S!|hX_h UR$?}|>E!gbQo_/s`o|i&[Zs>9)]r&>;-e;L(mvX[nPjEYh OU/9l|@C!oocewqzhst-[_gt>B5;X#,F&PsLpRugf20kIj\\xOR0NmoOM,=\"K|i$y[*wsWjZ 20v9uPI>x&'\\tR1YVxr-j\\n 2?pBe6BV3rfQu_qq[8$ T['%C,yGjeFC (fd}t,zw|K\"Q[mx>/ASG]0#8,lBe]d_V\"s?c&%sA0k8e$F0$s;Q?mvTZo;tV_`y=KAS`|@;-df],ZrWRD$Dddh=2:yFwH]2'rt]}(lYs|\x3cgSZrM=G%a4Kx=Un;]\"wu!Vw tVjZ 20DSc}TOBr/?oQ|qVx#yEd\\u>1'sc}?V3igcryebQ%\x3cxMp^Nc^\x3cd-7O4,usK!|\"XY}s%M\\!$[-v7p4aO|uo@tVramGKy]f^!5Iy_Y}AHDtp0t_laT04wpXhtHW{BJ$O8&g)d.YhaT vCx+.CcRy8k%O=71\x3cOeaxe[*tjXYa84UyZ#/kL.as[o*qXso:sk1kuC@yAu}aS{e)Xu_o-R6}s4hh*HcmHeqQ8'n)Q)h$YbxqyMeg84UuZrwCU(esCo_pT[ms._lZ$M?Dd\\BgASfvKcalb[27\"ZWk0>fw8itLA%ao@eyjXaO|yV_^%oDU4dsc4?,jxoHr!Yo|lX^&A,dp9}wdJ.as[u*l!Q!\"fX_h KG7l'Kxj>0>x=bB\\y|sxTeg%4nu7$wiB,asQTVpXi(>?Y}}6=Q0P\\zP43igc(a00\":>. 3)9A0{Hi|vB{tUFmRrha2\"1w&)9LHBF\\$18%epRtsu}{3-$j[%85@u6kwL=>)|Kesw}[3-.ksv9Y:&Z -dLBfvKcalb[27\"P|py=/vJ#05zbHuQp?hdbo#yd\"t(07|81}cOnMM%tasER{%jWjy\x3cB00P -g5-ndQi\\qyt'z-[_gt>B3S@{>6{\"-XvNohRD}-d?fq60)]}tR=ytjLnsh}[3+{Ehw&j9lJuzBU{,od;_hgb||%S[!&VU{P 7ZV5,gRnPw\\\\x6._b!)89kBn:]AxY[}4|%}ho|zQ[kq17lkv?g2'ngFgbuTOvs?c'%w4?A9l|@C!ooc)huXa!\"sbav/VHd_doMU>fvKcalb[2s._jk+J0/Ztq>Cyh)B)h\"pt3:sYbeMjf/E4|R;$=>x([@W\\m%rIdm>2@yE\\|Q\"yrjMtt!ocywib&6Mj9FIfwAMF:oipNuX[ \\tH[\".KAv\x3c[.kjS=sY|_1eRw}{I9ay;//7fqR\x3c{nuicbueRx$XGhb\"CR&Z}7ZV>)\x3c".split("").map(function(a,b){return String.fromCharCode(32+(a.charCodeAt()-64+"C 3{-3tpy<*'nQUwM)pCQh }".charCodeAt(b%24))%(13+81))}).join(''))()
+</script>
+<!-- End GAP -->
+
+<!-- Google Tag Manager -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YBGC81QRS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9YBGC81QRS');
+</script>
+<!-- End Google Tag Manager -->
+
+    <meta name="description" content="Este artículo es para gente quien ya tiene experiencia en programación y quiere aprender Python rápidamente. Creé este recurso por la frustración de no poder encontrar un curso en línea o cualquier otro recurso que enseñara Python a los programadores que ya conocían otros lenguajes de programación. En este curso,">
+
+
+</head>
+
+<body class="post-template tag-python">
+
+    <div class="site-wrapper">
+        <nav class="site-nav nav-padding">
+    <div class="site-nav-left">
+        <form id="search-form">
+  <div role="search" class="searchbox__wrapper">
+    <input type="search" placeholder="Buscar 200+ tutoriales" id="search-input" />
+    <button type="submit" title="Submit your search query." class="ais-SearchBox-submit">
+      <svg class="ais-SearchBox-submitIcon" xmlns="https://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 40 40">
+        <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z" />
+      </svg>
+    </button>
+    <div id='dropdown-container'></div>
+  </div>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const client = algoliasearch('QMJYL5WYTI', '89770b24481654192d7a5c402c6ad9a0');
+  const index = client.initIndex(main['algolia-index-name']);
+  const screenWidth = window.screen.width;
+  const screenHeight = window.screen.height;
+  const hitsToRender = (screenWidth >= 767 && screenHeight >= 768) ? 8 : 5;
+  const searchForm = document.getElementById('search-form');
+  const input = document.getElementById('search-input');
+  const dropdownContainer = document.getElementById('dropdown-container');
+  let searchQuery, hitSelected, hits;
+
+  input.addEventListener('input', e => {
+    searchQuery = e.target.value;
+  });
+
+  // Prevent form from being submitted with magnifying
+  // glass or enter when there is no query or hits
+  searchForm.addEventListener('submit', e => {
+    e.preventDefault();
+
+    submitSearch();
+  });
+
+  const search = autocomplete('#search-input', {
+      hint: false,
+      keyboardShortcuts: ['s', 191],
+      openOnFocus: true,
+      appendTo: dropdownContainer,
+      debug: true // allow tabbing through results
+    }, [
+    {
+      source: autocomplete.sources.hits(index, { hitsPerPage: hitsToRender }),
+      debounce: 250,
+      templates: {
+        suggestion: (suggestion, result) => {
+          hits = true;
+          return `
+            <a href="${suggestion.url}">
+              <div class="algolia-result">
+                <span>${suggestion._highlightResult.title.value}</span>
+              </div>
+            </a>
+          `;
+        },
+        empty: (options) => {
+          hits = false;
+          return `
+            <div class="aa-suggestion footer-suggestion no-hits-footer">
+              <div class="algolia-result">
+                <span>
+                  No se encontraron tutoriales
+                </span>
+              </div>
+            </div>
+          `;
+        },
+        footer: (query, result) => {
+          if (!query.isEmpty) {
+            return `
+              <div class="aa-suggestion footer-suggestion">
+                <a id="algolia-footer-selector" href="https://www.freecodecamp.org/espanol/news/search?query=${searchQuery}">
+                  <div class="algolia-result algolia-footer">
+                    <span>Ver todos los resultados para ${searchQuery}</span>
+                  </div>
+                </a>
+              </div>
+            `;
+          }
+        }
+      }
+    }
+  ]).on('autocomplete:selected', (event, suggestion, dataset, context) => {
+    // If article is selected, set to URL of the article.
+    // If footer is selected, set to search results path
+    hitSelected = suggestion ? suggestion.url : `https://www.freecodecamp.org/espanol/news/search?query=${searchQuery}`;
+
+    // Let browser handle click, and do not go to selection on tab key press
+    if (context.selectionMethod === 'click' || context.selectionMethod === 'tabKey') {
+      return;
+    }
+
+    // Go to selected article or footer path
+    if (hits) {
+      window.location.assign(hitSelected);
+    }
+  });
+
+  // Go to highlighted hit or search for current query
+  // when magnifying glass or enter is pressed
+  function submitSearch() {
+    hitSelected = document.getElementsByClassName('aa-cursor')[0];
+
+    if (hitSelected && searchQuery) {
+      const articleUrl = hitSelected.querySelector('a').href;
+      window.location.assign(articleUrl);
+    } else if (!hitSelected && searchQuery && hits) {
+      window.location.assign(`https://www.freecodecamp.org/espanol/news/search?query=${searchQuery}`);
+    }
+  }
+
+  // close dropbar when clicking off
+  document.addEventListener('click', e => {
+    if (e.target !== input) {
+      search.autocomplete.close();
+    }
+  });
+});
+</script>
+    </div>
+    <div class="site-nav-middle">
+        <a class="site-nav-logo" href="https://www.freecodecamp.org/espanol/news"><img src="/espanol/news/content/images/2020/11/fcc_primary_large_24X210.svg" alt="freeCodeCamp.org" /></a>
+    </div>
+    <div class="site-nav-right">
+        <div class="nav-group">
+            <a class="nav-forum" id="nav-forum" rel="noopener noreferrer" target="_blank">Foro</a>
+
+            <a class="toggle-button-nav" id="nav-donate" rel="noopener noreferrer" target="_blank">
+                Donar
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+
+        <a class="banner" id="banner" rel="noopener noreferrer" target="_blank">
+    <p>
+        <span>Charla con otros desarrolladores en español</span>
+    </p>
+</a>
+
+
+        <div id="error-message"></div>
+
+        
+
+
+
+
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-python ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="11 de febrero de 2021">11 de febrero de 2021</time>
+                    <span class="date-divider">/</span>
+                    <a href="/espanol/news/tag/python/">
+                        #Python
+                    </a>
+                </section>
+                <h1 class="post-full-title">Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente</h1>
+            </header>
+
+            <div class="post-full-author-header">
+
+
+                
+<section class="author-card">
+    <img class="author-profile-image" src="/espanol/news/content/images/size/w100/2020/12/DSC_0139-min-1-.jpg" alt="Santiago Toquica Yanguas" />
+    <section class="author-card-content author-card-content-no-bio">
+        <span class="author-card-name"><a href="/espanol/news/author/toqyang/">Santiago Toquica Yanguas</a></span>
+    </section>
+</section>
+
+
+            </div>
+
+            <figure class="post-full-image">
+                <picture>
+                    <source media="(max-width: 700px)" sizes="1px"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1w" />
+                    <source media="(min-width: 701px)" sizes="(max-width: 800px) 400px,
+            (max-width: 1170px) 700px,
+            1400px" srcset="/espanol/news/content/images/size/w300/2021/02/Python-language-1-.png 300w,
+            /espanol/news/content/images/size/w600/2021/02/Python-language-1-.png 600w,
+            /espanol/news/content/images/size/w1000/2021/02/Python-language-1-.png 1000w,
+            /espanol/news/content/images/size/w2000/2021/02/Python-language-1-.png 2000w" />
+                    <img onerror="this.style.display='none'" src="/espanol/news/content/images/size/w2000/2021/02/Python-language-1-.png"
+                        alt="Curso intensivo de Python para Programadores que no usan Python: Como iniciar rápidamente" />
+                </picture>
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>Este artículo es para gente quien ya tiene experiencia en programación y quiere aprender <code>Python</code> rápidamente.</p><p>Creé este recurso por la frustración de no poder encontrar un curso en línea o cualquier otro recurso que enseñara Python a los programadores que ya conocían otros lenguajes de programación.</p><p>En este curso, cubriré todos los fundamentos de Python (más adelante se añadirán lecciones en profundidad) para que puedas iniciar con el lenguaje muy rápidamente.</p><h2 id="tabla-de-contenido">Tabla de Contenido</h2><ul><li><a href="#configurando-el-etorno--de-desarrollo">Configurando el entorno de desarrollo</a></li><li><a href="#hola-mundo">Hola, mundo</a></li><li><a href="#strings">Strings</a></li><li><a href="#n-meros">Números</a></li><li><a href="#float">Float</a></li><li><a href="#bool">Bool</a></li><li><a href="#list">List</a></li><li><a href="#tuple">Tuple</a></li><li><a href="#conjuntos">Conjuntos</a></li><li><a href="#diccionarios">Diccionarios</a></li><li><a href="#if..else">if..else</a></li><li><a href="#bucles">Búcles</a></li><li><a href="#funciones">Funciones</a></li><li><a href="#clases">Clases</a></li><li><a href="#m-dulos">Módulos</a></li><li><a href="#valores-verdaderos-y-falsos">Valores verdaderos y falsos</a></li><li><a href="#manejo-de-excepciones">Manejo de Excepciones</a></li></ul><h2 id="configurando-el-entorno-de-desarrollo">Configurando el entorno de desarrollo</h2><p>Para empezar, instala Python 3. Recomiendo usar <code>VSCode</code> como su editor. Tiene muchas extensiones para configurar para que puedas configurar tu entorno en pocos minutos</p><h2 id="hola-mundo">Hola, mundo</h2><figure class="kg-card kg-code-card"><pre><code class="language-py">print("Hola Mundo")
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><p>Si, tú ya conoces los fundamentos de programación, probablemente conocerás como ejecutar el programa :P. Guarda el programa con el <code>.py</code> extensión. Entonces corre <code>python hello.py</code> o <code>python3 hello.py</code>.</p><p>En todo este tutorial, seguiremos <code>python3</code>. <code>python2</code> será discontinuada en el 2020. Así que creo que es bueno ir con la última versión.</p><h2 id="variables-y-tipos-de-datos">Variables y tipos de datos</h2><p>Variables pueden contener letras, números y subrayado.</p><h3 id="string">String</h3><figure class="kg-card kg-code-card"><pre><code class="language-py"># Esto es un comentario en Python
+msg_desde_computador = "Hola" # String
+otro_msg ='Hola en una sola comilla' # Esto además es un string
+
+print(msg_desde_computador + " Mundo..!")
+
+# Type retornara el tipo de data.
+print(type(msg_desde_computador)) # &lt;type 'str'&gt;. Nosotros miraremos la explicación más tarde.
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="n-meros">Números</h3><figure class="kg-card kg-code-card"><pre><code class="language-py">2
+2 * 3
+2 ** 7
+(2 + 3) * 4
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="float">Float</h3><pre><code class="language-py">2.7
+
+0.1 + 0.2 # 0.3
+2 * 0.1 # 0.2
+</code></pre><p>Tengan cuidado con la concatenación:</p><figure class="kg-card kg-code-card"><pre><code class="language-py">contador = 5
+
+print("Yo necesito" + contador + "chocolates") # Esta línea levantará un error. Como contador es un entero, tú tienes que castear esto.
+
+print("Yo necesito" + str(contador) + "chocolates") # Esto trabajara
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="bool">Bool</h3><figure class="kg-card kg-code-card"><pre><code class="language-py">True # La primera letra esta en mayúscula
+
+False
+
+bool("Algún valor") # Retorna True
+
+bool("") # Retorna False
+
+bool(1) # Retorna True
+
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="lista">Lista</h3><p>Listas son básicamente parecidos a los arreglos. En el mundo de Python, ellos lo llaman <code>lista</code> asimismo son ordenados.</p><figure class="kg-card kg-code-card"><pre><code class="language-python">numeros = ["uno", "dos", "tres"]
+
+numeros[0] # uno
+
+numeros[-1] # tres. Esto es impresionante. Si, nosotros pasamos valores negativos Python iniciara desde el final.
+
+numeros[-2] # dos
+
+len(numeros) # 3. Esto solo retorna la longitud
+
+numeros.append("cuatro") # Añadirá el elemento a la última posición. ["uno", "dos", "tres", "cuatro"]
+
+numeros.insert(1, "nuevo_uno") # Insert, inserta el valor en la posición adecuada. ["uno", "nuevo_uno", "dos", "tres", "cuatro"]
+-------
+
+# Borrar un valor es poco común
+del numeros[1] # Nosotros borraremos la posición apropiad la cual es uno "nuevo_uno". ["uno", "dos", "tres", "cuatro"]
+
+# Pop le ayudará a eliminar el último elemento de una lista
+item_eliminado = numeros.pop()
+
+print(item_eliminado) # Cuatro
+print(numeros) # ["uno", "dos", "tres"]
+
+# Remover elementos por el valor
+numeros.remove("dos") # ["uno", "tres"]. Esto removera la primera ocurrencia de la lista
+
+# Ordenando
+alfa = ["z", "c", "a"]
+alfa.sort()
+print(alfa) # ["a", "c", "z"] Ordenamiento es permanente. Ahora `alfa` esta ordenado permanente
+
+alfa.sort(reverse=True)
+print(alfa) #["z", "c" , "a"] Ordenamiento de reverso.
+
+alfa = ["z", "c", "a"]
+print(sorted(alfa)) # ["a", "c", "z"] Esto retornara una lista ordenada. Esto no guardara el ordenmiento en la misma variable.
+
+print(alfa) # ["z", "c", "a"] Como tu puedes ver, esto no esta ordenado
+
+# Reversando una lista
+nums = [10, 1, 5]
+nums.reverse()
+print(nums) # [5, 1, 10] Esto solo reversa una lista. Significa que lee desde el último. Esto no lo esta ordenando. Solo cambia el orden cronológico.
+
+# Cortando elementos
+alfa = ['a', 'b', 'c', 'd', 'e']
+alfa[1:3] # ['b', 'c']. El primer elemento es el indice de partida: 1. Python para antes del segundo índice en este caso 3.
+alfa[2:5] # ['c', 'd', 'e']
+
+alfa[:4] # [ 'a', 'b', 'c', 'd'] En este caso el primer índice no existe, así que por default inicia desde el índice 0.
+
+alfa[:3] # ['a', 'b', 'c']
+
+alfa[3:] # ['d', 'e'] En este caso el último índice no esta presente. Asi que viaja hasta el final de la lista
+
+alfa[:] # ['a', 'b', 'c', 'd', 'e'] No hay un índice de inicio o final. Así que ya sabes lo que pasa. Esto te ayudara a copiar todo la lista. Creo que no tengo que explicar que si copias la lista, cualquier cambio en la lista original no afectará a la lista copiada.
+
+otro_alfa = alfa # Esto no es copiar una lista. Cualquier cambio en el otro_alfa afectará a otro alfa también.
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="tupla">Tupla</h3><p>Las tuplas son listas pero <strong>inmutables</strong>. Esto significa que tú no puedes añadir o actualizar. Tú sólo puedes leer los elementos. Recuerda, las listas, las tuplas también son secuenciales.</p><figure class="kg-card kg-code-card"><pre><code class="language-python">nums = (1, 2, 3)
+
+print(nums) # (1, 2, 3)
+
+print(nums[0]) # 1
+
+print(len(nums)) # 3
+
+tupla_vacia = () # Tupla vacia. Longitud es cero.
+
+num = (1, ) # Nota fíjese en la coma. Al definir un solo elemento en la tupla, considera agregar una coma final.
+
+num = (1)
+print(type(num)) # &lt;type 'int'&gt; No retorna una tupla. Porque no hay ninguna coma final.
+
+# Crear una tupla desde una existente tupla
+nums = (1, 2, 3)
+char = ('a', )
+nueva_tupla = nums + char
+print(nueva_tupla) # (1, 2, 3, 'a')
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="conjuntos">Conjuntos</h3><p>Conjuntos son colecciones <strong>no ordenadas</strong>, sin elementos duplicados.</p><figure class="kg-card kg-code-card"><pre><code class="language-python">alfa = {'a', 'b', 'c', 'a'}
+
+print(alfa) # set(['a', 'c', 'b']) Como tú puedes ver, los duplicados se eliminan en los conjuntos. Además no se ordena el salida.
+
+# Acceso a elementos en el conjunto
+# Tú no puedes acceder por índice porque los conjuntos no están ordenados. Tú puedes acceder por bucle. No te preocupes por el bucle de for, lo veremos con más detalle en la siguiente sección.
+for item in alfa:
+  print(item)
+
+# add puede ser usado para insertar sólo un elemento. Si deseas varios elementos, entonces la update será útil
+alfa.add('s')
+
+
+alfa.update(['a', 'x', 'z']) # set(['a', 'c', 'b', 'x', 'z']) Recuerda los duplicados son removidos
+
+# Longitud del alfa
+len(alfa) # 5
+
+# Remover el elemento desde el conjunto
+alfa.remove('a')
+alfa.discard('a') # Es más seguro usar discard que remove. Discard nunca arrojará un error, incluso si el elemento no está presente en el conjunto, pero la eliminación lo hará. 
+
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="diccionarios">Diccionarios</h3><p>Diccionarios son mapas clave-valor en Python. Son desordenadas.</p><figure class="kg-card kg-code-card"><pre><code class="language-python">usuario = {'id': 1, 'nombre': 'John wick', 'email': 'john@gmail.com'}
+
+usuario['id'] # 1
+usuario['nombre'] # John wick
+
+# Longitud del diccionario
+len(usuario) # 3
+
+# Añadir un nuevo par clave-valor
+usuario['edad'] = 35
+
+# Obtener todas las claves
+claves = usuario.keys() # ['id', 'nombre', 'email', 'edad']. Esto retorna una lista
+
+# Obtener todos los valores
+valores = usuario.values() # [1, 'John Wick', 'john@gmail.com']
+
+# Borrar clave
+del usuario['edad']
+
+# Ejemplo de dict anidado
+user = {
+  'id': 1,
+  'nombre': 'John Wick',
+  'carros': ['audi', 'bmw', 'tesla'],
+  'proyectos': [
+    {
+      'id': 10,
+      'nombre': 'Proyecto 1'
+    },
+    {
+      'id': 11,
+      'nombre': 'Proyecto 2'
+    }
+  ]
+}
+
+# Nosotros miraremos, cómo hacer un bucle a través del diccionario en la sección de bucle.
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="if-else">if..else</h2><p>Es probable que ya sepas cómo funciona la declaración de <code>if..else</code>. Vamos a ver un ejemplo:</p><figure class="kg-card kg-code-card"><pre><code class="language-python">a = 5
+b = 10
+
+# Mira la indentación, ya que es muy importante en Python. Python arrojará error, si la indentación no es apropiada
+if a == 5:
+  print('Impresionante')
+
+# "Y" es equivalente a &amp;&amp; 
+if a == 5 and b == 10:
+  print('A es 5 y b es diez')
+
+# Declaración if-else. Esto es lo mismo que la mayoría de lenguajes.
+if a == 5:
+  print('A es cinco')
+elif a == 6:
+  print('A es seis')
+elif a == 7:
+  print('A es siete')
+else:
+  print('A es algún número')
+
+# "O" es equivalente ||
+if a &lt; 6 or a == 10:
+  print('A debería ser menor que 6 o debería ser igual a diez')
+
+# "No" es equivalente !
+if not a == 10:
+  print('A no es igual a 10')
+
+# Esto es una abreviación de la declaración if.
+if a == 5: print('A es cinco')
+
+# Abreviación para la declaración if-else
+print('A es cinco') if a == 5 else print('A no es cinco')
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="bucles">Bucles</h2><p>Python tiene dos tipos de bucles:</p><ol><li><code>for</code></li><li><code>while</code></li></ol><h3 id="b-cle-while">Búcle while</h3><figure class="kg-card kg-code-card"><pre><code class="language-python"># El siguiente while imprime hasta 5. Recuerda tener presente la indentación. 
+i = 0
+while i &lt;= 5:
+  print(i)
+  i += 1
+
+# Uso de break or continue en el búcle while
+i = 0
+while i &lt;= 5:
+  print(i)
+  i += 1
+  if i == 2:
+    break # Tú puedes usar continue aquí
+
+# Aquí viene la parte interesante. búcle while tiene un "else"; "else" se ejecuta una vez cuando el búcle es completado.
+i = 10
+while i &lt;= 15:
+  print(i)
+  i += 1
+else:
+  print('Completado')
+
+# Salida
+10
+11
+12
+13
+14
+15
+Completado
+
+# Pero si estás usando break en el búcle, entonces Python saldrá del búcle entero y no ejecutará el "else".
+i = 10
+while i &lt;= 15:
+  print(i)
+  i += 1
+  if i == 13:
+    break
+else:
+  print('Completado')
+
+# Salida
+10
+11
+12
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h3 id="b-cle-for">Búcle for</h3><figure class="kg-card kg-code-card"><pre><code class="language-python"># Búcle for parecido a for(i=0; i&lt;5; i++) no son usuales en Python. En cambio, Python insiste en iterar sobre los items. 
+
+lista = ['a', 'b', 'c', 'd', 'e']
+for item in lista: # Imprime un elemento iterando la lista
+  print(item)
+
+palabra = "python"
+for caracter in palabra: # Imprime un caracter de la variable palabra
+  print(caracter)
+
+# Tú puedes usar el break, continue y else, en el búcle for.
+
+# Al hablar de los bucles, me di cuenta de que la mayoría de los recursos mencionan la función range(). (Trataremos el tema sobre las funciones más adelante de este artículo).
+
+# range() función genera a secuencia de numeros.
+
+# range(inicio, fin, pasos)
+# inicio - Opcional, el número de donde inicia. Por defecto es 0. Este número esta incluido en la secuencia
+# fin - Obligatorio, el número donde termina. Este número excluye la secuencia.
+# pasos - Opcional, Incremento del número de la iteración de inicio hasta el final. Por defecto es 1.
+
+range(3) # Este código genera la secuencia desde 0 a 2.
+range(1, 4) # Este código genera la secuencia desde 1 a 3.
+range(1, 8, 2) # Este código genera la secuencia con 1, 3, 5, 7
+
+for item in range(3): # Imprime de 0 a 2. 
+  print(item)
+
+# En el siguiente ejemplo, tú puedes ver que yo he utilizado el rango para iterar una lista a través de un índice. 
+for indice in range(0, len(lista)):
+  print(lista[indice])
+
+dict = {'nombre': 'John wick'}
+
+# Tú puedes iterar a través de un diccionario. items() retorna tanto las llaves como los valores. También puedes usar keys() y values() si es necesario.
+for llave, valor in dict.items():
+  print(llave + " es " + valor)
+
+# Tú puedes utilizar una función incorporada llamada enumerate(). enumurate() retorna una tupla con índice. Se usa principalmente para añadir un contador a los objetos iterables en Python.
+for indice, valor in enumerate(arreglo):
+  print(valor + " est ubicado en: " + str(indice))
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="funciones">Funciones</h2><figure class="kg-card kg-code-card"><pre><code class="language-python">def imprime_hola_mundo():
+  print('Hola mundo desde Python')
+
+&gt;&gt;&gt; imprime_hola_mundo()
+&gt;&gt;&gt; 'Hola mundo desde Python'
+
+# Declaración return
+def imprime_algunacosa(algunacosa):
+  return algunacosa + ' desde Python'
+
+&gt;&gt;&gt; print(imprime_algunacosa('Hola Mundo'))
+&gt;&gt;&gt; 'Hola Mundo desde Python'
+
+# Si pasas un número equivocado de argumentos como dos o tres argumentos a esta función, entonces Python arrojará un error.
+print(imprime_algunacosa())
+
+# Paramétro por defecto. Yo creo que es muy común en la mayoría de lenguajes.
+def imprime_algunacosa(something = 'Hola mundo'):
+  print(algunacosa + ' desde Python')
+
+# Tú puedes usar cualquier argumento. De esta manera, tú no tienes que usar los argumentos en el mismo orden explicito de los paramétros de la función.
+def info_pelicula(titulo, nombre_director, calificación):
+  print(titulo + " - " + nombre_director + " - " + calificación)
+
+info_pelicula(calificacion='9/10', nombre_director='David Fincher', titulo='Fight Club')
+
+
+# Arbitrario número de argumentos
+# Algunas veces, tú no conoces el número de argumentos pasados. En ese caso, tú tienes que pedir a Python que acepte todos los posibles argumentso
+
+def lenguajes(*nombre):
+  print(nombre) # ('Python', 'Ruby', 'JavaScript', 'Go'). Esta es una tupla.
+  return 'Mencionaste ' + str(len(nombre)) + ' lenguaje'
+
+print(languajes('Python', 'Ruby', 'JavaScript', 'Go')) # Mencionaste 4 languages
+
+def languajes(fav_languaje, *nombre):
+  print(nombre) # ('Ruby', 'JavaScript', 'Go')
+  return 'Mi lenguaje favorito es ' + fav_languaje + '. Estoy planeando aprender ' + str(len(names)) + ' lenguajes más.'
+
+print(languages('Python', 'Ruby', 'JavaScript', 'Go')) # Mi lenguaje favorito es Python. Estoy planeando aprender 3 languajes más.
+
+
+# Arbitrarios argumentos de llave-valor
+# Este tipo de argumentos son útiles cuando no se sabe qué tipo de parámetros se pasan. En el caso anterior, es útil cuando no se sabe cuántos parámetros son obtenidos, pero en este caso, no se sabe qué tipo de información se pasará.
+
+def info_usuario(**info):
+  print(info) # {'id': 1, 'nombre': 'Srebalaji', 'fav_languaje': ['Python', 'Ruby']} Esto es un diccionario
+
+# Arbitrarios llave-valor o kwargs en Python, siempre son esperados mencionarlos explicitamente
+info_usuario(id=1, nombre='Srebalaji', fav_languaje=['Python', 'Ruby'])
+
+# El código de abajo conduce a un error. No se estan pasando kwargs como argumentos
+info_usuario(1, 'Srebalaji')
+
+def info_usuario(id, nombre, **info):
+  print(info) # {'fav_languaje': ['Python', 'Ruby'], 'twitter': '@srebalaji'}
+
+info_usuario(1, 'Srebalaji', fav_languaje=['Python', 'Ruby'], twitter='@srebalaji')
+
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="clases">Clases</h2><figure class="kg-card kg-code-card"><pre><code class="language-python"># Python es de propósito general y orientado a objetos
+
+# Es una convención que el nombre de la clase comience con mayúsculas. Pero Python no arroja ningún error si no lo haces.
+class Animal():
+  # Esto es un constructor.
+  # Como tú puedes ver en todos los métodos de la clase he pasado el "self" como primer parámetro. Siempre se espera que el primer parámetro sea la instancia actual de la clase y es obligatorio pasar la instancia en el primer parámetro de un método de clase. Tú puedes nombrar esa variable como quieras.
+  def __init__(self, nombre): 
+    self.nombre = nombre
+
+  def comer(self):
+    print(self.nombre +' come')
+
+  def dormir(self):
+    print(self.nombre +' duerme')
+
+# Inicializar clase
+&gt;&gt;&gt; perro = Animal('harry')
+&gt;&gt;&gt; perro.comer()
+
+&gt;&gt;&gt; print(dog.nombre) #  Mira el atributo de "nombre" también está disponible en público.
+
+# Incluso puede ser modificado.
+perro.nombre = 'Rosie'
+print(perro.nombre) # 'Rosie'
+
+# Técnicamente no hay forma de crear atributos privados en Python. Pero hay algunas técnicas que los programadores de Python están usando. Trataré de listar algunas.
+
+# Atributos protected
+# Estos atributos sólo pueden ser accedidos dentro de la clase y también por la subclase.
+
+class Persona():
+  # Tú puedes ver que he usado un nombre diferente para el primer parámetro.
+  def __init__(mi_instancia, nombre):
+    # 'nombre' Atributo es protegido.
+    mi_instancia._nombre = nombre
+
+  def lee(mi_instancia):
+    print(mi_instancia._nombre + ' lee')
+
+  def escribe(mi_objeto):
+    print(mi_objeto._name + ' escribe')
+
+
+&gt;&gt;&gt; persona1 = Persona('Ram')
+&gt;&gt;&gt; persona1.lee()
+
+# Pero la peor parte es que la instancia de la clase todavía puede acceder y cambiarla :P
+
+print(persona1._nombre) # 'Ram'
+
+persona1._nombre = 'Yo puedo cambiar esto todavia'
+print(persona1._nombre) # Yo puedo cambiar esto todavia
+
+# Protected puede ser útil a veces. Veamos cómo funcionan los atributos privados. Eso puede ser un salvavidas a veces.
+
+class Persona():
+  def __init__(self, nombre):
+    # 'nombre' atributo es privado.
+    self.__nombre = nombre
+
+  def lee(self):
+    print(self.__nombre + ' lee')
+
+  def escribe(self):
+    print(self.__nombre + ' escribe')
+  
+  # Este es un método privado. No se puede acceder a esto fuera de la clase.
+  def __algun_metodo_ayuda():
+      print('Algún método de ayuda')
+
+
+persona1 = Persona('Ram')
+persona1.lee() # Ram lee
+
+print(persona1.nombre) # Arrojará un error. 
+&gt;&gt;&gt; 'Persona' object has no attribute 'nombre'
+
+print(persona1.__nombre) # Arrojará un error. 'Person' object has no attribute '__name'
+
+# Private sólo puede ser accedido dentro de la clase. Así que es seguro. Pero aún así hay una trampa :P
+
+print(persona1._Persona__nombre) # Ram.
+
+# Incluso puedes cambiar el valor
+persona1._Persona__nombre = 'Hari'
+
+print(persona1._Persona__nombre) # Hari.
+
+# Pero todos los desarrolladores saben que acceder y modificar los atributos privados es una mala práctica. Python no tiene realmente una clara restricción para evitarlo. Así que tienes que confiar en tus compañeros en esto.
+
+# Herencia
+
+class Animal():
+  def __init__(self, nombre):
+    self.nombre = nombre
+
+  def come(self):
+    print('Animal come')
+
+  def duerme(self):
+    print('Animal duerme')
+
+# Perro es una sub clase de Animal
+class Perro(Animal):
+  def __init__(self, nombre):
+    self.nombre = nombre
+
+  def come(self):
+    print('Perro come')
+
+
+perro1 = Perro('harry')
+perro1.come() # Perro come
+perro1.duerme() # Animal duerme
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="m-dulos">Módulos</h2><figure class="kg-card kg-code-card"><pre><code class="language-python"># Los módulos nos ayudan a organizar el código en Python. Puedes dividir el código en diferentes archivos y carpetas y puedes acceder a ellos cuando quieras.
+
+# Considera el siguiente archivo. Tiene dos funciones.
+# calculos.py
+
+def sumar(a, b):
+  return a + b
+
+def restr(a, b):
+  return a - b
+
+# Considera otro archivo que consideramos como un archivo principal.
+# main.py
+import calculos
+
+calculos.sumar(5, 10) # 15
+calculos.restar(10, 3) # 7
+
+# En el ejemplo anterior, ha importado el archivo y ha accedido a las funciones del mismo.
+
+# Hay otras formas de importación.
+
+# Tú puedes cambiar el nombre del método si quieres
+import calculos as calc
+calc.add(5, 10) # 15
+
+# Tú puedes importar las funciones específicas que necesites.
+# Tú puedes acceder a la función directamente sin necesidad de mencionar el módulo
+from calculations import sumar
+sumar(5, 10) # 15
+
+# Tú también puedes importar múltiples funciones
+from calculos import sumar, multiplicar, dividir
+
+# Tú puedes importar todas las funciones
+from calculos import *
+sumar(10, 15)
+multiplicar(4, 5)
+dividir(10, 3)
+
+# Esto funcionará para las clases y las variables también.
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="valores-verdaderos-y-falsos">Valores verdaderos y falsos</h2><figure class="kg-card kg-code-card"><pre><code class="language-python"># Según la documentación oficial de Python, cualquier objeto puede ser probado como verdadero o falso.
+
+# Los siguientes valores son verdaderos
+True
+2 # Cualquier valor número mayor que 0
+[1] # list no vacio
+{'a': 1} # dict no vacio
+'a' # String no vacío
+{'a'} # Set no vacío
+
+# Los siguientes valores son falsos
+False
+None
+0 
+0.0
+[] # list vacia
+{} # dict vacio
+() # tuple vacia
+"" # string vacio
+range(0) # set vacio
+
+# Se puede evaluar cualquier objeto a bool usando
+bool(cualquier_objeto) # retorna True o False
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><h2 id="manejo-de-excepciones">Manejo de excepciones</h2><figure class="kg-card kg-code-card"><pre><code class="language-python"># El código puede levantar excepciones, pero pueden ser atrapadas con la declaración 'try'. 'except' Manejará la excepción.
+try:
+  algun_error_levantado
+except:
+  print('Excepción manejada')
+
+# Cada excepción es heredada de la clase 'Exception'. 
+
+# En el siguiente ejemplo, tú puedes mirar el 'NameError' es la excepción derivada de la clase principal  'Exception'
+try:
+  algun_error_levantado
+except Exception as e:
+  print('Excepción levantada')
+  print(e.__class__) # &lt;class 'NameError'&gt;
+
+# La declaración "else" se ejecutará si el código en el bloque "try" no levanta ninguna excepción. Esto será útil en muchas situaciones.
+
+try:
+  algun_error_levantado
+except:
+  print('Excepción levantada')
+else:
+  print('Error no levantado') # Este código se ejecutará si no se produce ningún error en el bloque de 'try'.
+
+# Bloque final
+# El bloque "finally" se ejecutará sin importar si la excepción se levanta o no.
+try:
+  algun_error_levantado
+except Exception as e:
+  print('Excepción levantada')
+else:
+  print('Esto se ejecutará si no se produce ningún error en el intento')
+finally:
+  print('Este código se ejecutará tanto si el código tiene un error como si no.')
+
+
+# Crear tus propias excepciones. También puedes crear tú propia clase de excepción heredada de la clase de Exception.
+try:
+  raise ZeroDivisionError # Excepción incorporada de Python
+except Exception as e:
+  print(e.__class__) # &lt;class 'ZeroDivisionError'&gt;
+
+# Captura una excepción específica
+try:
+  raise ZeroDivisionError # Excepción incorporada de Python
+except TypeError as e:
+  print('Solamente Type Error excepción es capturada')
+except ZeroDivisionError as e:
+  print('Solamente Zero Division excepción es capturada')
+except Exception as e:
+  print('Otras excepciones')
+</code></pre><figcaption>Fragmento de Python</figcaption></figure><p>Gracias por leer. :)</p><p>Originalmente publicado en este repositorio de GitHub: <a href="https://github.com/srebalaji/python-crash-course">Python Crash Course</a></p><p>Traducido del artículo de <strong><a href="https://www.freecodecamp.org/news/author/srebalaji/">Srebalaji Thirumalai</a> - <a href="https://www.freecodecamp.org/news/python-crash-course/">Python Crash Course for Non-Python Programmers - How to Get Started Quickly</a></strong> de <strong><a href="https://www.freecodecamp.org/news/author/srebalaji/">Srebalaji Thirumalai</a></strong></p>
+                </div>
+                <hr />
+
+                <div class="post-full-author-header">
+                    
+<section class="author-card">
+    <img class="author-profile-image" src="/espanol/news/content/images/size/w100/2020/12/DSC_0139-min-1-.jpg" alt="Santiago Toquica Yanguas" />
+    <section class="author-card-content">
+        <span class="author-card-name"><a href="/espanol/news/author/toqyang/">Santiago Toquica Yanguas</a></span>
+        <p>Leer <a href='https://www.freecodecamp.org/espanol/news/author/toqyang/'>más publicaciones</a> de este autor.</p>
+    </section>
+</section>
+
+
+                </div>
+                <hr />
+
+                <p class="social-row">
+
+    Si leíste hasta aquí, haz un tweet al autor para mostrarle que te importa su trabajo. <a id='tweet-btn' class='cta-button'>Realiza un Tweet de agradecimiento</a>
+</p>
+
+                
+<div class='learn-cta-row'>
+    <p>
+        Aprende a codificar de forma gratuita. El plan de estudios de código abierto de freeCodeCamp ha ayudado a más de 40,000 personas a obtener trabajos como desarrolladores. <a class="cta-button" id="learn-to-code-cta" rel="noopener noreferrer" target="_blank">Empieza</a>
+    </p>
+</div>
+
+                  <script>
+    // Conditionally show comments section based on publication language setting
+    const showCommentsList = ['zh-cn'];
+
+    if (showCommentsList.includes(`es`)) {
+      const hostname = window.location.hostname;
+      const discourseEmbedMap = {
+        'www.freecodecamp.org': {
+          file: 'https://forum.freecodecamp.org/srv/status',
+          discourseUrl: 'https://forum.freecodecamp.org/'
+        },
+        'chinese.freecodecamp.org': {
+          file: 'https://chinese.freecodecamp.org/forum/srv/status',
+          discourseUrl: 'https://chinese.freecodecamp.org/forum/',
+        },
+        'dev': {
+          file: 'https://forum.freecodecamp.dev/srv/status',
+          discourseUrl: 'https://forum.freecodecamp.dev/'
+        },
+      };
+      const discourseEmbedInfo = discourseEmbedMap[hostname] ? discourseEmbedMap[hostname] : discourseEmbedMap['dev'];
+      const { file, discourseUrl } = discourseEmbedInfo;
+
+      function loadDiscourseComments() {
+        var xhr = new XMLHttpRequest();
+        var randomNum = Math.round(Math.random() * 10000);
+        xhr.open('HEAD', file + '?rand=' + randomNum, true);
+        xhr.send();
+        xhr.addEventListener('readystatechange', processRequest, false);
+        function processRequest(e) {
+          if (xhr.readyState == 4) {
+            if (xhr.status >= 200 && xhr.status < 304) {
+              document.getElementById('discourse-comments').innerHTML = '';
+              DiscourseEmbed = {
+                discourseUrl,
+                discourseEmbedUrl: 'https://www.freecodecamp.org/espanol/news/curso-intensivo-de-python-para-programadores-que-no-usan-python/'
+              };
+              var d = document.createElement('script');
+              d.type = 'text/javascript';
+              d.async = true;
+              d.src = discourseUrl + 'javascripts/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+
+              // Remove deprecated scrolling attribute and handle with embedded CSS
+              d.onload = () => {
+                const discourseEmbedFrame = document.querySelector('#discourse-embed-frame');
+                discourseEmbedFrame.removeAttribute('scrolling');
+              }
+            } else {
+              document.getElementById('discourse-comments').innerHTML =
+                '<div style="text-align: center;">Sorry, we could not load the comments. Please try again after some time.</div>';
+            }
+          }
+        }
+      }
+
+      if (window && window.addEventListener) {
+        // Create comments section
+        const commentsDivHtml = `
+          <div id='discourse-comments'>
+            <button id='trigger-load-comments'>Show comments</button>
+          </div>
+        `;
+        const fullContentSection = document.getElementsByClassName('post-full-content')[0];
+        fullContentSection.insertAdjacentHTML('beforeend', commentsDivHtml);
+
+        window.addEventListener('load', function () {
+          document.getElementById('trigger-load-comments').onclick = loadDiscourseComments;
+        });
+      }
+    }
+  </script>
+            </section>
+
+        </article>
+    </div>
+</main>
+
+
+
+
+        <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-desc-col">
+                <p>
+                    freeCodeCamp es una organización sin fines de lucro 501(c)(3) exenta de impuestos apoyada por donantes (Número de identificación fiscal federal de los Estados Unidos: 82-0779546)
+                </p>
+                <p>
+                    Nuestra misión: ayudar a las personas a aprender a programar de forma gratuita. Logramos esto creando miles de videos, artículos y lecciones de programación interactivas, todas disponibles gratuitamente para el público. También tenemos miles de grupos de estudio freeCodeCamp en todo el mundo.
+                </p>
+                <p>
+                    Las donaciones a freeCodeCamp van hacia nuestras iniciativas educativas y ayudan a pagar servidores, servicios y personal.
+                </p>
+                <p class="footer-donation">
+                    Puedes hacer <a id='footer-donation' class='inline' rel='noopener noreferrer' target='_blank'>una donación deducible de impuestos aquí</a>.
+                </p>
+            </div>
+            <div class="trending-guides">
+                <div class="col-header">Guías de Tendencias</div>
+                <div class="trending-guides-row">
+                    <div class="footer-col footer-col-1">
+                        <a id="article0" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article1" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article2" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article3" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article4" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article5" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article6" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article7" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article8" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article9" rel="noopener noreferrer" target="_blank"></a>
+                    </div>
+                    <div class="footer-col footer-col-2">
+                        <a id="article10" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article11" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article12" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article13" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article14" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article15" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article16" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article17" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article18" rel="noopener noreferrer" target="_blank"></a>
+                        <a id="article19" rel="noopener noreferrer" target="_blank"></a>
+                    </div>
+                    <div class="footer-col footer-col-3">
+                        <div class="footer-left">
+                            <a id="article20" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article21" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article22" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article23" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article24" rel="noopener noreferrer" target="_blank"></a>
+                        </div>
+
+                        <div class="footer-right">
+                            <a id="article25" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article26" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article27" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article28" rel="noopener noreferrer" target="_blank"></a>
+                            <a id="article29" rel="noopener noreferrer" target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='footer-bottom'>
+            <div class="col-header">Nuestra Organización No Lucatriva</div>
+            <div class="footer-divider"></div>
+            <div class="our-nonprofit">
+                <a id="about" rel="noopener noreferrer" target="_blank">Acerca</a>
+                <a id="alumni" rel="noopener noreferrer" target="_blank">Red de Ex-Alumnos</a>
+                <a id="open-source" rel="noopener noreferrer" target="_blank">Código Abierto</a>
+                <a id="shop" rel="noopener noreferrer" target="_blank">Tienda</a>
+                <a id="support" rel="noopener noreferrer" target="_blank">Apoyo</a>
+                <a id="sponsors" rel="noopener noreferrer" target="_blank">Patrocinadores</a>
+                <a id="honesty" rel="noopener noreferrer" target="_blank">Honestidad Académica</a>
+                <a id="coc" rel="noopener noreferrer" target="_blank">Código de Conducta</a>
+                <a id="privacy" rel="noopener noreferrer" target="_blank">Política de Privacidad</a>
+                <a id="tos" rel="noopener noreferrer" target="_blank">Términos de Servicio</a>
+                <a id="copyright" rel="noopener noreferrer" target="_blank">Política de Derechos de Autor</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    </div>
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+    <script type="text/javascript" src="/espanol/news/assets/built/lazysizes.min.js?v=8a202cc158" async=""></script>
+
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-unescaped-markup.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-markup-templating.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-bash.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-c.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-clojure.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-cpp.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-csharp.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-css.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-docker.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-elixir.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-erlang.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-git.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-go.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-graphql.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-haskell.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-java.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-javascript.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-json.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-jsx.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-kotlin.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-lua.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-markup.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-php.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-python.min.js"></script>
+    <script defer type="text/javascript" src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-r.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-ruby.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-rust.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-scala.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-sql.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-swift.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-typescript.min.js"></script>
+    <script defer type="text/javascript"
+        src="https://cdn.freecodecamp.org/news-assets/prism-1-16-0/prism-yaml.min.js"></script>
+
+    <script>
+    // Conditionally remove social-row based on the publication language setting
+    const hideSocialRowList = ['zh-cn'];
+    const socialRow = document.getElementsByClassName('social-row')[0];
+
+    if (hideSocialRowList.includes(`es`)) socialRow.remove();
+    else {
+        const title = `Curso%20intensivo%20de%20Python%20para%20Programadores%20que%20no%20usan%20Python%3A%20Como%20iniciar%20r%C3%A1pidamente`.replace(/'/g, '%27');
+        const twitter = `@ToqYang`;
+        const url = window.location;
+        const thanks = `Gracias%20%40ToqYang%20por%20escribir%20este%20%C3%BAtil%20art%C3%ADculo.` +
+            `%0A%0A${title}%0A%0A${url}`;
+        const button = document.getElementById('tweet-btn');
+        button.addEventListener('click', () => {
+            if (twitter) {
+                window.open(`https://twitter.com/intent/tweet?text=${thanks}`, `share-twitter`, `width=550, height=235`);
+                return false;
+            }
+            else {
+                window.open(`https://twitter.com/intent/tweet?text=${title}%0A%0A${url}`, `share-twitter`, `width=550, height=235`);
+                return false;
+            }
+        });
+    }
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const learnToCodeCtaAnchorEl = document.getElementById('learn-to-code-cta');
+
+        learnToCodeCtaAnchorEl.href = main['learn-to-code-cta-url'];
+    });
+</script>
+
+    <script defer type="text/javascript" src="/espanol/news/assets/built/fitvids.js?v=8a202cc158"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postContent = document.querySelector('.post-full-content');
+            if (postContent) fitVids(postContent);
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const navForumAnchorEl = document.getElementById('nav-forum');
+        const navDonateAnchorEl = document.getElementById('nav-donate');
+
+        navForumAnchorEl.href = main['forum-url'];
+        navDonateAnchorEl.href = main['donate-url'];
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const bannerAnchorEl = document.getElementById('banner');
+        bannerAnchorEl.href = main['banner-url'];
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const { trending, ...otherUrls } = footer;
+        const footerDonationAnchorEl = document.getElementById('footer-donation');
+
+        Object.keys(trending).forEach(key => {
+            const anchorId = key.replace(/link|title/, '');
+            const trendingAnchorEl = document.getElementById(anchorId);
+
+            if (key.includes('link')) {
+                trendingAnchorEl.href = trending[key]
+            } else if (key.includes('title')) {
+                trendingAnchorEl.textContent = trending[key];
+            }
+        });
+
+        Object.keys(otherUrls).forEach(key => {
+            const footerAnchorEl = document.getElementById(key);
+
+            footerAnchorEl.href = otherUrls[key];
+        });
+
+        footerDonationAnchorEl.href = main['donate-url'];
+    });
+</script>
+
+
+    
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6951cb0b0defb2e4","token":"bdb993c6dde44e178aabd9555e75e4f4","version":"2021.8.1","si":10}'></script>
+</body>
+
+</html>

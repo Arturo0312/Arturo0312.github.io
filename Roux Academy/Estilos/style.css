@@ -1,0 +1,573 @@
+@media (min-width: 1200px) {
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    body{
+        background-image: url(../img/background_buildings.png);
+    }
+    
+    .Contenido{
+        margin-left: 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    
+    .cabeza{
+        display: flex;
+        background-color: black;
+        height: 120px;
+        
+    }
+    
+    .cabeza .imagen-c{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 60%;
+    }
+    .cabeza .texto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cabeza h2{
+        color: white;
+    }
+    .cabeza p{
+        color: white;
+    }
+    
+    .menu{
+        background-color: orange;
+        height: 30px;
+    }
+    
+    .menu a{
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 10px 0;
+        color: black;
+    }
+    
+    .menu a:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .banner{
+        margin-bottom: 0%;
+        background-color: white;
+    }
+    
+    .banner img{
+        width: 1200px;
+        
+    }
+    
+    .parte1{
+        display: flex;
+        background-color: white;   
+        
+    }
+    
+    .parte1 .izquierda1{
+        width: 65%;
+        margin-left: 15px;
+    }
+    
+    .About{
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    
+    .feat{
+        font-family: sans-serif;
+        margin-top: 30px;
+    }
+    
+    .com{
+        margin-top: 30px;
+        font-family: sans-serif;
+        color: #AD2E24;
+    }
+    
+    .com h3{
+        color: #b9bfc9;
+    }
+    
+    
+    .com p{
+        font-family: sans-serif;
+        color: black;
+    }
+    
+    .cuadricula{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .cuadricula img{
+        width:25%;
+        border-radius: 10px;
+    }
+    .cuadricula a{
+        text-align: right;
+    
+    }
+    
+    .parte2 {
+        background-color: white;
+        display: flex;
+        
+        
+    }
+    .parte2 .izquierda2{
+        width: 50%;
+    }
+    .parte2 .derecha2{
+        width: 50%;
+    }
+    
+    .izquierda2 {
+        font-family: sans-serif;
+        margin-top: 15px;
+        width: 70%;
+    }
+    .derecha2{
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 30%;
+    }
+    .izquierda2 .txt-img{
+        display: flex;
+    }
+    
+    .pie{
+        height: 180px;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+    }
+    
+    .pie .imagen-p{
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 0%;
+        width: 15%;
+    }
+    
+    .pie .parrafo-p{
+        color: white;
+        font-family: sans-serif;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .pie .lista{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .pie a{
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 10px 0;
+        color: white;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 1024px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    body{
+        background-image: url(../img/background_buildings.png);
+    }
+    
+    .Contenido{
+        margin-left: 10px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    
+    .cabeza{
+        display: flex;
+        background-color: black;
+        height: 120px;
+        
+    }
+    
+    .cabeza .imagen-c{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 60%;
+    }
+    .cabeza .texto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .cabeza h2{
+        color: white;
+    }
+    .cabeza p{
+        color: white;
+    }
+    
+    .menu{
+        background-color: orange;
+        height: 30px;
+    }
+    
+    .menu a{
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 10px 0;
+        color: black;
+    }
+    
+    .menu a:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .banner{
+        margin-bottom: 0%;
+        background-color: white;
+    }
+    
+    .banner img{
+        width: 1000px;
+        
+    }
+    
+    .parte1{
+        display: flex;
+        background-color: white;   
+        
+    }
+    
+    .parte1 .izquierda1{
+        width: 65%;
+        margin-left: 15px;
+    }
+    
+    .About{
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+    
+    .feat{
+        font-family: sans-serif;
+        margin-top: 30px;
+    }
+    
+    .com{
+        margin-top: 30px;
+        font-family: sans-serif;
+        color: #AD2E24;
+    }
+    
+    .com h3{
+        color: #b9bfc9;
+    }
+    
+    
+    .com p{
+        font-family: sans-serif;
+        color: black;
+    }
+    
+    .cuadricula{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .cuadricula img{
+        width:25%;
+        border-radius: 10px;
+    }
+    .cuadricula a{
+        text-align: right;
+    
+    }
+    
+    .parte2 {
+        background-color: white;
+        display: flex;
+        
+        
+    }
+    .parte2 .izquierda2{
+        width: 50%;
+    }
+    .parte2 .derecha2{
+        width: 50%;
+    }
+    
+    .izquierda2 {
+        font-family: sans-serif;
+        margin-top: 15px;
+        width: 70%;
+    }
+    .derecha2{
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        width: 30%;
+    }
+    .izquierda2 .txt-img{
+        display: flex;
+    }
+    
+    .pie{
+        height: 180px;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+    }
+    
+    .pie .imagen-p{
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-right: 0%;
+        width: 15%;
+    }
+    
+    .pie .parrafo-p{
+        color: white;
+        font-family: sans-serif;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .pie .lista{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    .pie a{
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 10px 0;
+        color: white;
+    }
+}
+
+@media (max-width: 1023px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    body{
+        background-image: url(../img/background_buildings.png);
+    }
+    
+    .Contenido{
+        margin-left: 10px;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    
+    .cabeza{
+        display: flex;
+        background-color: black;
+        height: 120px;
+        
+    }
+    
+    .cabeza .imagen-c{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 60%;
+    }
+    .cabeza .texto{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    
+    .cabeza h2{
+        color: white;
+    }
+    .cabeza p{
+        color: white;
+    }
+    
+    .menu{
+        background-color: orange;
+        height: 30px;
+    }
+    
+    .menu a{
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 5px 0;
+        color: black;
+        font-size: 11px;
+    }
+    
+    .menu a:hover{
+        background-color: black;
+        color: white;
+    }
+    
+    .banner{
+        margin-bottom: 0px;
+        background-color: white;
+    }
+    
+    .banner img{
+        width: 350px;
+        
+    }
+    
+    .parte1{
+        
+        background-color: white;   
+        
+    }
+    
+    .parte1 .izquierda1{
+        width: 65%;
+        margin-left: 15px;
+    }
+    
+    .About{
+        margin-top: 0px;
+        font-family: sans-serif;
+    }
+    
+    .feat{
+        font-family: sans-serif;
+        margin-top: 30px;
+    }
+    
+    .com{
+        margin-top: 30px;
+        font-family: sans-serif;
+        color: #AD2E24;
+    }
+
+    .com img{
+        width: 60%;
+        margin-left: 15px;
+    }
+    
+    .com h3{
+        color: #b9bfc9;
+    }
+    
+    
+    .com p{
+        font-family: sans-serif;
+        color: black;
+    }
+    
+    .cuadricula{
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .cuadricula img{
+        width:25%;
+        border-radius: 10px;
+    }
+    .cuadricula a{
+        text-align: right;
+    
+    }
+    
+    .parte2 {
+        background-color: white;
+       
+        
+        
+    }
+    
+    .izquierda2 {
+        font-family: sans-serif;
+        margin-top: 0px;
+        
+    }
+    .derecha2{
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        
+    }
+    .izquierda2 .txt-img{
+        display: flex;
+        margin-left: 5px;
+    }
+
+    .planta img{
+        width: 100%;
+    }
+
+    .planta{
+
+        width: 40%;
+    }
+
+    .parrafo{
+        width: 60%;
+        margin-left: 15px;
+    }
+
+    .derecha2{
+        text-align: justify;
+    }
+
+    .schedule{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    
+    .pie{
+        height: 180px;
+        background-color: rgb(32, 32, 32);
+        display: flex;
+    }
+    
+    .imagen-p{
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 45px;
+    }
+    
+    .lista{
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    
+    .pie a{
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        padding: 5px 3px 0;
+        color: white;
+        font-size: 8px;
+    }
+}
+
+
+
+
+

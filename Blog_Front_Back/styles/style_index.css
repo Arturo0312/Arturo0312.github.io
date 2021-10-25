@@ -1,0 +1,897 @@
+
+    @media (min-width: 1200px){
+
+        *{
+        
+        margin: 0px;
+        padding: 0px;
+                
+        }
+    
+        body{
+            background-color: #FF91AF;
+        }
+    
+        .contenido{
+            margin-left: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .cabeza{
+            display: flex;
+            background-color: #611C35;
+        }
+        .cabeza img{
+            width: 15%;
+            border-radius: 10%;
+        }
+    
+        .cabeza ul{
+            margin-left: 40px;
+            margin-right: 0%;
+        }
+        .cabeza li{
+            font-size: 25px;
+            font-family: sans-serif;
+            color: lavender;
+        }
+    
+        .cabeza p{
+            margin-left: 180px;
+            margin-right: 20px;
+            margin-top: 15px;
+            font-size: 30px;
+            font-family: sans-serif;
+            text-align: justify;
+            color: lavender;
+        }
+    
+        .menu{
+            background-color: #FFA630;
+            height: 30px;
+        }
+    
+        .menu a{
+            font-family: initial;
+            text-decoration: none;
+            padding: 5px 10px 0;
+            color: black;
+            font-size: 25px;
+        }
+    
+        .menu a:hover{
+            background-color: black;
+            color: white;
+        }
+    
+        .Arquitectura{
+            display: flex;
+            background-color: #EB5160;
+        }
+        
+        .img-A{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+            
+        }
+    
+        .img-A img{
+            border-radius: 10px;
+        }
+    
+        .Txt-A{
+            margin-left: 15px;
+            margin-top: 15px;
+            
+        }
+    
+        .Txt-A p{
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+        }
+    
+        .Front{
+            background-color: #BC96E6;
+        }
+        .QF{
+            text-align: center;
+        }
+        .QF h1{
+            font-family: sans-serif;
+        }
+        .ORG-F{
+            display: flex;
+        }
+        .img-QF{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .img-QF img{
+            width: 100%;
+        }
+        .txt-QF{
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-right: 15px;
+            text-align: justify;
+        }
+        .txt-QF p{
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+        }
+        .RolesF{
+            background-color: #BC96E6 ;
+            text-align: center;
+        }
+        .ORG-RF{
+            display: flex;
+        }
+        .UI{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .UI img{
+            width: 300px;
+        }
+        .UI p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .MAQ{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .MAQ img{
+            width: 350px;
+        }
+        .MAQ p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .FED{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .FED img{
+            width: 300px;
+        }
+        .FED p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .LF{
+           text-align: center;
+        }
+        .ORG-LF{
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            background-color: #FFF9FB;
+        }
+        .ORG-LF img{
+            width: 300px;
+        }
+    
+        .Back{
+            background-color: #68C3D4;
+        }
+        .QB{
+            text-align: center;
+        }
+        .QB h1{
+            font-family: sans-serif;
+        }
+        .ORG-B{
+            display: flex;
+        }
+        .img-BF{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .img-BF img{
+            width: 100%;
+        }
+        .txt-BF{
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-right: 15px;
+            text-align: justify;
+        }
+        .txt-BF p{
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+        }
+        .RolesB{
+            background-color: #68C3D4 ;
+            text-align: center;
+        }
+        .ORG-RB{
+            display: flex;
+        }
+        .BD{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .BD img{
+            width: 300px;
+        }
+        .BD p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .DA{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .DA img{
+            width: 350px;
+        }
+        .DA p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .CC{
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+        .CC img{
+            width: 300px;
+        }
+        .CC p{
+            font-family: sans-serif;
+            color: white;
+        }
+        .LB{
+           text-align: center;
+        }
+        .ORG-LB{
+            margin-right: 10px;
+            margin-left: 10px;
+            display: flex;
+            background-color: #FFF9FB;
+        }
+        .ORG-LB img{
+            width: 300px;
+        }
+    
+        .Desarrollo{
+            background-color: #EB5160 ;
+            text-align: center;
+        }
+    
+        .Desarrollo a{
+            font-family: initial;
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+        }
+    
+        .Desarrollo a:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        .pie{
+            text-align: center;
+            background-color: #611C35;
+        }
+        .pie img{
+            width: 100px;
+            border-radius: 10%;
+            margin-left: 200px;
+        }
+    }
+
+    @media (max-width: 1199px) and (min-width: 1024px){
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+                    
+            }
+        
+            body{
+                background-color: #FF91AF;
+            }
+        
+            .contenido{
+                margin-left: 10px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+        
+            .cabeza{
+                display: flex;
+                background-color: #611C35;
+            }
+            .cabeza img{
+                width: 15%;
+                border-radius: 10%;
+            }
+        
+            .cabeza ul{
+                margin-left: 40px;
+                margin-right: 0%;
+            }
+            .cabeza li{
+                font-size: 25px;
+                font-family: sans-serif;
+                color: lavender;
+            }
+        
+            .cabeza p{
+                margin-left: 180px;
+                margin-right: 20px;
+                margin-top: 15px;
+                font-size: 30px;
+                font-family: sans-serif;
+                text-align: justify;
+                color: lavender;
+            }
+        
+            .menu{
+                background-color: #FFA630;
+                height: 30px;
+            }
+        
+            .menu a{
+                font-family: initial;
+                text-decoration: none;
+                padding: 5px 10px 0;
+                color: black;
+                font-size: 25px;
+            }
+        
+            .menu a:hover{
+                background-color: black;
+                color: white;
+            }
+        
+            .Arquitectura{
+                display: flex;
+                background-color: #EB5160;
+            }
+            
+            .img-A{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+                
+            }
+        
+            .img-A img{
+                border-radius: 10px;
+            }
+        
+            .Txt-A{
+                margin-left: 15px;
+                margin-top: 15px;
+                
+            }
+        
+            .Txt-A p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+        
+            .Front{
+                background-color: #BC96E6;
+            }
+            .QF{
+                text-align: center;
+            }
+            .QF h1{
+                font-family: sans-serif;
+            }
+            .ORG-F{
+                display: flex;
+            }
+            .img-QF{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .img-QF img{
+                width: 100%;
+            }
+            .txt-QF{
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 15px;
+                text-align: justify;
+            }
+            .txt-QF p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+            .RolesF{
+                background-color: #BC96E6 ;
+                text-align: center;
+            }
+            .ORG-RF{
+                display: flex;
+            }
+            .UI{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .UI img{
+                width: 300px;
+            }
+            .UI p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .MAQ{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .MAQ img{
+                width: 350px;
+            }
+            .MAQ p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .FED{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .FED img{
+                width: 300px;
+            }
+            .FED p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .LF{
+               text-align: center;
+            }
+            .ORG-LF{
+                margin-right: 10px;
+                margin-left: 10px;
+                display: flex;
+                background-color: #FFF9FB;
+            }
+            .ORG-LF img{
+                width: 200px;
+            }
+        
+            .Back{
+                background-color: #68C3D4;
+            }
+            .QB{
+                text-align: center;
+            }
+            .QB h1{
+                font-family: sans-serif;
+            }
+            .ORG-B{
+                display: flex;
+            }
+            .img-BF{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .img-BF img{
+                width: 100%;
+            }
+            .txt-BF{
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 15px;
+                text-align: justify;
+            }
+            .txt-BF p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+            .RolesB{
+                background-color: #68C3D4 ;
+                text-align: center;
+            }
+            .ORG-RB{
+                display: flex;
+            }
+            .BD{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .BD img{
+                width: 300px;
+            }
+            .BD p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .DA{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .DA img{
+                width: 350px;
+            }
+            .DA p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .CC{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .CC img{
+                width: 300px;
+            }
+            .CC p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .LB{
+               text-align: center;
+            }
+            .ORG-LB{
+                margin-right: 10px;
+                margin-left: 10px;
+                display: flex;
+                background-color: #FFF9FB;
+            }
+            .ORG-LB img{
+                width: 200px;
+            }
+        
+            .Desarrollo{
+                background-color: #EB5160 ;
+                text-align: center;
+            }
+        
+            .Desarrollo a{
+                font-family: initial;
+                text-decoration: none;
+                color: black;
+                font-size: 40px;
+            }
+        
+            .Desarrollo a:hover{
+                background-color: black;
+                color: white;
+            }
+            
+            .pie{
+                text-align: center;
+                background-color: #611C35;
+            }
+            .pie img{
+                width: 100px;
+                border-radius: 10%;
+                margin-left: 200px;
+            }
+    }
+
+    @media (max-width: 1023px){
+        *{
+        
+            margin: 0px;
+            padding: 0px;
+                    
+            }
+        
+            body{
+                background-color: #FF91AF;
+            }
+        
+            .contenido{
+                margin-left: 10px;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        
+            .cabeza{
+                display: flex;
+                background-color: #611C35;
+            }
+            .cabeza img{
+                height: 100px;
+                border-radius: 10%;
+            }
+        
+            .cabeza ul{
+                margin-left: 40px;
+                margin-right: 0%;
+            }
+            .cabeza li{
+                margin-top: 10px;
+                font-size: 8px;
+                font-family: sans-serif;
+                color: lavender;
+            }
+        
+            .cabeza p{
+                margin-top: 10px;
+                margin-left: 5px;
+                font-size: 8px;
+                font-family: sans-serif;
+                text-align: justify;
+                color: lavender;
+            }
+        
+            .menu{
+                background-color: #FFA630;
+                height: 30px;
+            }
+        
+            .menu a{
+                font-family: initial;
+                text-decoration: none;
+                padding: 5px 5px 0;
+                color: black;
+                font-size: 11px;
+            }
+        
+            .menu a:hover{
+                background-color: black;
+                color: white;
+            }
+        
+            .Arquitectura{
+                
+                background-color: #EB5160;
+            }
+            
+            .img-A{
+                
+                margin-left: 5px;
+                margin-bottom: 5px;
+                
+            }
+        
+            .img-A img{
+                margin-top: 10px;
+                width: 290px;
+                border-radius: 10px;
+            }
+        
+            .Txt-A{
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 15px;
+                text-align: justify;
+                
+            }
+        
+            .Txt-A p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+        
+            .Front{
+                background-color: #BC96E6;
+            }
+            .QF{
+                text-align: center;
+            }
+            .QF h1{
+                font-family: sans-serif;
+            }
+            .ORG-F{
+                
+            }
+            .img-QF{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+            .img-QF img{
+                width: 100%;
+            }
+            .txt-QF{
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 15px;
+                text-align: justify;
+            }
+            .txt-QF p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+            .RolesF{
+                background-color: #BC96E6 ;
+                text-align: center;
+            }
+            .ORG-RF{
+                
+            }
+            .UI{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .UI img{
+                width: 290px;
+            }
+            .UI p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .MAQ{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .MAQ img{
+                width: 290px;
+            }
+            .MAQ p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .FED{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .FED img{
+                width: 290px;
+            }
+            .FED p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .LF{
+               text-align: center;
+            }
+            .ORG-LF{
+                margin-right: 10px;
+                margin-left: 10px;
+                
+                background-color: #FFF9FB;
+            }
+            .ORG-LF img{
+                width: 200px;
+            }
+        
+            .Back{
+                background-color: #68C3D4;
+            }
+            .QB{
+                text-align: center;
+            }
+            .QB h1{
+                font-family: sans-serif;
+            }
+            .ORG-B{
+                
+            }
+            .img-BF{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+            .img-BF img{
+                width: 100%;
+            }
+            .txt-BF{
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-right: 15px;
+                text-align: justify;
+            }
+            .txt-BF p{
+                font-family: sans-serif;
+                color: white;
+                font-size: 20px;
+            }
+            .RolesB{
+                background-color: #68C3D4 ;
+                text-align: center;
+            }
+            .ORG-RB{
+              
+            }
+            .BD{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .BD img{
+                width: 290px;
+            }
+            .BD p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .DA{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .DA img{
+                width: 290px;
+            }
+            .DA p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .CC{
+                margin-top: 5px;
+                margin-left: 5px;
+                margin-bottom: 5px;
+            }
+            .CC img{
+                width: 290px;
+            }
+            .CC p{
+                font-family: sans-serif;
+                color: white;
+            }
+            .LB{
+               text-align: center;
+            }
+            .ORG-LB{
+                margin-right: 10px;
+                margin-left: 10px;
+                
+                background-color: #FFF9FB;
+            }
+            .ORG-LB img{
+                width: 200px;
+            }
+        
+            .Desarrollo{
+                background-color: #EB5160 ;
+                text-align: center;
+            }
+        
+            .Desarrollo a{
+                font-family: initial;
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+            }
+
+            .Desarrollo video{
+                width: 290px;
+            }
+        
+            .Desarrollo a:hover{
+                background-color: black;
+                color: white;
+            }
+            
+            .pie{
+                text-align: center;
+                background-color: #611C35;
+            }
+            .pie img{
+                width: 100px;
+                border-radius: 10%;
+               
+            }
+    }
+    

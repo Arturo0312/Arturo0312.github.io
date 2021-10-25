@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <script src="logica.js"> 
+    
+    </script>
+    <h1>CALCULE SU INDICE DE MASE CORPORAL INGRESANDO LO QUE SE LE PIDE</h1>
+    <div class="entradas">
+        <label for="">Ingrese su peso en kg:</label>
+        <input id="txt_peso" type="text" placeholder="peso"> <br>
+        <label for="">ingrese su altura en metros:</label>
+        <input id="estatura" type="text" placeholder="estatura"><br>
+        <button onclick="Calcular();">CALCULAR</button>
+    </div>
+    <div class="resultados">
+        <h3>Su indice de masa corporal es:</h3><br>
+        <h3 id="imc_res"></h3>
+        <h3>Usted se encuentra en el estatus de</h3>
+        <h3 id="estatus"></h3>
+    </div>
+    <div class="imagen-estatus">
+        <img src="" alt="" id="pic">
+    </div>
+  
+</body>
+</html>

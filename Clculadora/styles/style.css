@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.contenido{
+    width: 1200px;
+    background-color: darkslategrey;
+    text-align: center;
+}
+#operacion{
+    width: 1200px;
+    background-color: darkslategrey;
+    text-align: center; 
+}

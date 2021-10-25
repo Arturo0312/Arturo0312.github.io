@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-color: #E5A4CB;
+}
+
+.contenido{
+    margin-left: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #08BDBD;
+}
+
+.cabeza{
+    background-color: #FDFFFC;
+    border-radius: 10px
+}
+
+.cabeza h1{
+    text-align: center;
+    font-family: serif;
+}
+
+.formulario{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.Nombre{
+    
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Correo{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Tamales{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Materias{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Victorense{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Burguir{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.color{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Fecha{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.Carreras{
+    background-color:#F0F2EF ;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+
+
+
+.clearflix{
+    clear: both;
+}
